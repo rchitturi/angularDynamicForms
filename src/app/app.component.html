@@ -1,0 +1,14 @@
+<div id="main-content">
+  <sd-toolbar></sd-toolbar>
+  <!--<sd-navbar></sd-navbar>-->
+
+  <main class="container">
+    <router-outlet></router-outlet>
+  </main>
+
+  <sd-footer></sd-footer>
+
+  <simple-notifications [options]="notiOptions"></simple-notifications>
+
+  <app-loader id="app-loader"></app-loader>
+</div>

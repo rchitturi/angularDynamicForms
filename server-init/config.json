@@ -1,0 +1,40 @@
+{
+  "PROJECTPATH": "./projects",
+  "JSONPATH": "./projects/tams/JSON/",
+  "APPPATH": "../client/",
+  "TOMCATWEBAPPS": "/var/lib/tomcat7/webapp",
+  "TOMCATWEBAPPSNAME": "DTAMS",
+  "PROJECTNAME": "DTAMS",
+  "LOCAL": {
+    "EXPRESS": {
+      "PORT": "3199"
+    },
+    "PROXY": 3199,
+	  "MAPPING_FILE": "config.json"
+  },
+  "API": {
+	  "PREFIX": ""
+  },
+  "BROWSERSYNC": {
+    "Port": 3000,
+    "UIPort": 3001,
+    "testPort": 3002
+  },
+  "PRODUCTION": {
+    "PATH": "../src/main/webapp"
+  },
+  "PROXY":              true,
+  "SRCPATH":            "src",
+  "DEVPATH":            "dev",
+  "BUILDPATH":          "build",
+  "BINPATH":            "bin",
+  "JSPATH":             "/app",
+  "ASSETPATH":          "/assets",
+  "CSSPATH":            "/css",
+  "SCSSPATH":           "/scss",
+  "HTMLPATH":           "/views",
+  "EXTRA": {
+    "S": "/",
+    "D": "."
+  }
+}

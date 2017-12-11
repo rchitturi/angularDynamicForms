@@ -1,0 +1,9 @@
+{
+	"reports": {
+		"reportType": "USPS",
+		"reportData": [{
+			"storeNumber": "123456",
+			"report": []
+		}]
+	}
+}

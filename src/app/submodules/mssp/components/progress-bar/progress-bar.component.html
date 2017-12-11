@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="progress">
+    <ng-container *ngFor="let step of steps; let i = index; let first = first; let last = last;">
+      <div class="col-xs-1 progress-item"
+           [routerLinkActive]="['active']"
+           [ngClass]="{'first': first, 'last': last}">
+        <a routerLink="/mssp/section-{{step+1}}" title="Click to jump to Section {{step+1}}">{{step+1}}</a>
+      </div>
+    </ng-container>
+  </div>
+</div>

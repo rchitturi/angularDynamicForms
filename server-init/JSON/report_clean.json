@@ -1,0 +1,9 @@
+{
+	"reports": {
+		"reportType": "Clean",
+		"reportData": [{
+			"storeNumber": "123456",
+			"report": []
+		}]
+	}
+}

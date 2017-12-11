@@ -1,0 +1,547 @@
+{
+  "FranchiseeInfo": [{
+    "FranchiseeLegacyCode": "HAL",
+    "FranchiseeCode": "PPP0000001",
+    "FranchiseeName": "A. Scott Ritchie"
+  }, {
+    "FranchiseeLegacyCode": "UKA",
+    "FranchiseeCode": "PPP1047633",
+    "FranchiseeName": "Ahmed (Ed) Ukani"
+  }, {
+    "FranchiseeLegacyCode": "SAL",
+    "FranchiseeCode": "PPP0000032",
+    "FranchiseeName": "Al Salas"
+  }, {
+    "FranchiseeLegacyCode": "APA",
+    "FranchiseeCode": "PPP1299511",
+    "FranchiseeName": "Anand Patel"
+  }, {
+    "FranchiseeLegacyCode": "ROS",
+    "FranchiseeCode": "PPP1000266",
+    "FranchiseeName": "Andrew Rosen"
+  }, {
+    "FranchiseeLegacyCode": "KLO",
+    "FranchiseeCode": "PPP1087207",
+    "FranchiseeName": "Anneke Klosterman"
+  }, {
+    "FranchiseeLegacyCode": "BUT",
+    "FranchiseeCode": "PPP0000162",
+    "FranchiseeName": "Bernard Butler"
+  }, {
+    "FranchiseeLegacyCode": "YNG",
+    "FranchiseeCode": "PPP0261124",
+    "FranchiseeName": "Bob Young"
+  }, {
+    "FranchiseeLegacyCode": "KTT",
+    "FranchiseeCode": "PPP0000212",
+    "FranchiseeName": "Brent Kyte"
+  }, {
+    "FranchiseeLegacyCode": "KYT",
+    "FranchiseeCode": "PPP0000212",
+    "FranchiseeName": "Brent Kyte"
+  }, {
+    "FranchiseeLegacyCode": "NEU",
+    "FranchiseeCode": "PPP0050865",
+    "FranchiseeName": "Bryan Neuendorf"
+  }, {
+    "FranchiseeLegacyCode": "PTB",
+    "FranchiseeCode": "PPP0742128",
+    "FranchiseeName": "Bryant Peterson"
+  }, {
+    "FranchiseeLegacyCode": "CAC",
+    "FranchiseeCode": "PPP0000280",
+    "FranchiseeName": "Carl Carreca"
+  }, {
+    "FranchiseeLegacyCode": "MON",
+    "FranchiseeCode": "PPP0000338",
+    "FranchiseeName": "Charlie Hudson"
+  }, {
+    "FranchiseeLegacyCode": "STT",
+    "FranchiseeCode": "PPP0000338",
+    "FranchiseeName": "Charlie Hudson"
+  }, {
+    "FranchiseeLegacyCode": "ERI",
+    "FranchiseeCode": "PPP0000408",
+    "FranchiseeName": "Craig Erikson"
+  }, {
+    "FranchiseeLegacyCode": "KNO",
+    "FranchiseeCode": "PPP0000473",
+    "FranchiseeName": "Darlene Knorr"
+  }, {
+    "FranchiseeLegacyCode": "TAN",
+    "FranchiseeCode": "PPP0000484",
+    "FranchiseeName": "Dave Curnutt"
+  }, {
+    "FranchiseeLegacyCode": "DAV",
+    "FranchiseeCode": "PPP0001750",
+    "FranchiseeName": "David Paradise"
+  }, {
+    "FranchiseeLegacyCode": "STA",
+    "FranchiseeCode": "PPP0050812",
+    "FranchiseeName": "David Staab"
+  }, {
+    "FranchiseeLegacyCode": "STAA",
+    "FranchiseeCode": "PPP0050812",
+    "FranchiseeName": "David Staab"
+  }, {
+    "FranchiseeLegacyCode": "NYP",
+    "FranchiseeCode": "PPP0000558",
+    "FranchiseeName": "Dennis Riese"
+  }, {
+    "FranchiseeLegacyCode": "LVY",
+    "FranchiseeCode": "PPP0000596",
+    "FranchiseeName": "Donald Harty"
+  }, {
+    "FranchiseeLegacyCode": "FIT",
+    "FranchiseeCode": "PPP0050515",
+    "FranchiseeName": "Donald Williams"
+  }, {
+    "FranchiseeLegacyCode": "LOC",
+    "FranchiseeCode": "PPP0000622",
+    "FranchiseeName": "Douglas Lockard"
+  }, {
+    "FranchiseeLegacyCode": "FMI",
+    "FranchiseeCode": "PPP1042508",
+    "FranchiseeName": "Dwight Fraser"
+  }, {
+    "FranchiseeLegacyCode": "DIA",
+    "FranchiseeCode": "PPP1304081",
+    "FranchiseeName": "Eduardo Diaz"
+  }, {
+    "FranchiseeLegacyCode": "STI",
+    "FranchiseeCode": "PPP0000698",
+    "FranchiseeName": "Ernie Stith"
+  }, {
+    "FranchiseeLegacyCode": "TEN",
+    "FranchiseeCode": "PPP0000985",
+    "FranchiseeName": "Estate of Ivan Tennyson"
+  }, {
+    "FranchiseeLegacyCode": "WIL",
+    "FranchiseeCode": "PPP0001194",
+    "FranchiseeName": "Estate of John Willias"
+  }, {
+    "FranchiseeLegacyCode": "FRE",
+    "FranchiseeCode": "PPP0001951",
+    "FranchiseeName": "Estate of Richard Freeland"
+  }, {
+    "FranchiseeLegacyCode": "BER",
+    "FranchiseeCode": "PPP0000742",
+    "FranchiseeName": "Floyd Bergen"
+  }, {
+    "FranchiseeLegacyCode": "RGV",
+    "FranchiseeCode": "PPP0000742",
+    "FranchiseeName": "Floyd Bergen"
+  }, {
+    "FranchiseeLegacyCode": "SAB",
+    "FranchiseeCode": "PPP0000768",
+    "FranchiseeName": "Frank Sabatini"
+  }, {
+    "FranchiseeLegacyCode": "FJS",
+    "FranchiseeCode": "PPP0055742",
+    "FranchiseeName": "Freeman Shelton III"
+  }, {
+    "FranchiseeLegacyCode": "CMR",
+    "FranchiseeCode": "PPP0000796",
+    "FranchiseeName": "Gary Coomer"
+  }, {
+    "FranchiseeLegacyCode": "CAM",
+    "FranchiseeCode": "PPP0000817",
+    "FranchiseeName": "Gene Camarena"
+  }, {
+    "FranchiseeLegacyCode": "TOH",
+    "FranchiseeCode": "PPP1056149",
+    "FranchiseeName": "Greg Shelton"
+  }, {
+    "FranchiseeLegacyCode": "MCC",
+    "FranchiseeCode": "PPP0000908",
+    "FranchiseeName": "Hal W. McCoy"
+  }, {
+    "FranchiseeLegacyCode": "KRE",
+    "FranchiseeCode": "PPP0000925",
+    "FranchiseeName": "Harold Kreeger"
+  }, {
+    "FranchiseeLegacyCode": "STA",
+    "FranchiseeCode": "PPP1167405",
+    "FranchiseeName": "Henry Kuehl"
+  }, {
+    "FranchiseeLegacyCode": "FN9237",
+    "FranchiseeCode": "PPP0001000",
+    "FranchiseeName": "J. Larry Fugate"
+  }, {
+    "FranchiseeLegacyCode": "FUG",
+    "FranchiseeCode": "PPP0001000",
+    "FranchiseeName": "J. Larry Fugate"
+  }, {
+    "FranchiseeLegacyCode": "RIC",
+    "FranchiseeCode": "PPP0001012",
+    "FranchiseeName": "Jack Richmond"
+  }, {
+    "FranchiseeLegacyCode": "CHI",
+    "FranchiseeCode": "PPP0001018",
+    "FranchiseeName": "Jack Shelton"
+  }, {
+    "FranchiseeLegacyCode": "MAC",
+    "FranchiseeCode": "PPP0050733",
+    "FranchiseeName": "James B. McNerney Jr."
+  }, {
+    "FranchiseeLegacyCode": "BOD",
+    "FranchiseeCode": "PPP0001047",
+    "FranchiseeName": "James Bodenstedt"
+  }, {
+    "FranchiseeLegacyCode": "CAR",
+    "FranchiseeCode": "PPP0001063",
+    "FranchiseeName": "James Carter"
+  }, {
+    "FranchiseeLegacyCode": "DES",
+    "FranchiseeCode": "PPP1299829",
+    "FranchiseeName": "James DeSnyder"
+  }, {
+    "FranchiseeLegacyCode": "CAL",
+    "FranchiseeCode": "PPP0050933",
+    "FranchiseeName": "James Gressett"
+  }, {
+    "FranchiseeLegacyCode": "PAC",
+    "FranchiseeCode": "PPP0050933",
+    "FranchiseeName": "James Gressett"
+  }, {
+    "FranchiseeLegacyCode": "NPE",
+    "FranchiseeCode": "PPP0050501",
+    "FranchiseeName": "James Schwartz"
+  }, {
+    "FranchiseeLegacyCode": "NPS",
+    "FranchiseeCode": "PPP0050501",
+    "FranchiseeName": "James Schwartz"
+  }, {
+    "FranchiseeLegacyCode": "NPW",
+    "FranchiseeCode": "PPP0050501",
+    "FranchiseeName": "James Schwartz"
+  }, {
+    "FranchiseeLegacyCode": "SIL",
+    "FranchiseeCode": "PPP0615423",
+    "FranchiseeName": "James Sill"
+  }, {
+    "FranchiseeLegacyCode": "PAN",
+    "FranchiseeCode": "PPP1045131",
+    "FranchiseeName": "Jay Pandya"
+  }, {
+    "FranchiseeLegacyCode": "REE",
+    "FranchiseeCode": "PPP0001099",
+    "FranchiseeName": "Jeff Reetz"
+  }, {
+    "FranchiseeLegacyCode": "BSR",
+    "FranchiseeCode": "PPP0056838",
+    "FranchiseeName": "Jeffery Bullock"
+  }, {
+    "FranchiseeLegacyCode": "BUS",
+    "FranchiseeCode": "PPP0780635",
+    "FranchiseeName": "Jerry (Jared) Buss"
+  }, {
+    "FranchiseeLegacyCode": "ARD",
+    "FranchiseeCode": "PPP0915051",
+    "FranchiseeName": "Jerry Ardizzone"
+  }, {
+    "FranchiseeLegacyCode": "WVP",
+    "FranchiseeCode": "PPP0915051",
+    "FranchiseeName": "Jerry Ardizzone"
+  }, {
+    "FranchiseeLegacyCode": "MLV",
+    "FranchiseeCode": "PPP0001124",
+    "FranchiseeName": "Jerry Miller"
+  }, {
+    "FranchiseeLegacyCode": "MIJ",
+    "FranchiseeCode": "PPP0001139",
+    "FranchiseeName": "Jim Middleton"
+  }, {
+    "FranchiseeLegacyCode": "SUT",
+    "FranchiseeCode": "PPP1129670",
+    "FranchiseeName": "Jimmy Sutton"
+  }, {
+    "FranchiseeLegacyCode": "JVA",
+    "FranchiseeCode": "PPP0050768",
+    "FranchiseeName": "John Addis"
+  }, {
+    "FranchiseeLegacyCode": "CMP",
+    "FranchiseeCode": "PPP0001179",
+    "FranchiseeName": "John Camp"
+  }, {
+    "FranchiseeLegacyCode": "MCJ",
+    "FranchiseeCode": "PPP0001188",
+    "FranchiseeName": "John McGrath"
+  }, {
+    "FranchiseeLegacyCode": "PAT",
+    "FranchiseeCode": "PPP0001169",
+    "FranchiseeName": "John Patranella"
+  }, {
+    "FranchiseeLegacyCode": "ARA",
+    "FranchiseeCode": "PPP0001153",
+    "FranchiseeName": "Joseph Aragon"
+  }, {
+    "FranchiseeLegacyCode": "COM",
+    "FranchiseeCode": "PPP0698464",
+    "FranchiseeName": "Joseph Comes"
+  }, {
+    "FranchiseeLegacyCode": "JLU",
+    "FranchiseeCode": "PPP0001272",
+    "FranchiseeName": "Joyce Lunsford"
+  }, {
+    "FranchiseeLegacyCode": "KUK",
+    "FranchiseeCode": "PPP0981808",
+    "FranchiseeName": "Kamran Kurani"
+  }, {
+    "FranchiseeLegacyCode": "HAK",
+    "FranchiseeCode": "PPP0001299",
+    "FranchiseeName": "Keith Hartvigsen"
+  }, {
+    "FranchiseeLegacyCode": "WAG",
+    "FranchiseeCode": "PPP0001307",
+    "FranchiseeName": "Kenneth Wagnon"
+  }, {
+    "FranchiseeLegacyCode": "COL",
+    "FranchiseeCode": "PPP0056846",
+    "FranchiseeName": "Kent Colvin"
+  }, {
+    "FranchiseeLegacyCode": "KAT",
+    "FranchiseeCode": "PPP0634350",
+    "FranchiseeName": "Kevin Kurihara"
+  }, {
+    "FranchiseeLegacyCode": "KUR",
+    "FranchiseeCode": "PPP0001361",
+    "FranchiseeName": "Kurban Kurani"
+  }, {
+    "FranchiseeLegacyCode": "MAL",
+    "FranchiseeCode": "PPP0001411",
+    "FranchiseeName": "Lawrence Marshall"
+  }, {
+    "FranchiseeLegacyCode": "ALV",
+    "FranchiseeCode": "PPP0001446",
+    "FranchiseeName": "Linda Alvarado"
+  }, {
+    "FranchiseeLegacyCode": "ITL",
+    "FranchiseeCode": "PPP1056740",
+    "FranchiseeName": "Luis Veras"
+  }, {
+    "FranchiseeLegacyCode": "STO",
+    "FranchiseeCode": "PPP0000215",
+    "FranchiseeName": "M. Brent Stolzenthaler"
+  }, {
+    "FranchiseeLegacyCode": "MPA",
+    "FranchiseeCode": "PPP0068918",
+    "FranchiseeName": "Mahendar (Moni) Patel"
+  }, {
+    "FranchiseeLegacyCode": "ACH",
+    "FranchiseeCode": "PPP0050614",
+    "FranchiseeName": "Mark Achenbach"
+  }, {
+    "FranchiseeLegacyCode": "DIL",
+    "FranchiseeCode": "PPP0001511",
+    "FranchiseeName": "Mark Dillon"
+  }, {
+    "FranchiseeLegacyCode": "PEM",
+    "FranchiseeCode": "PPP0001519",
+    "FranchiseeName": "Mark Peterson"
+  }, {
+    "FranchiseeLegacyCode": "DAY",
+    "FranchiseeCode": "PPP0001534",
+    "FranchiseeName": "Marvin Day"
+  }, {
+    "FranchiseeLegacyCode": "BRD",
+    "FranchiseeCode": "PPP0001608",
+    "FranchiseeName": "Michael Baird"
+  }, {
+    "FranchiseeLegacyCode": "JOH",
+    "FranchiseeCode": "PPP0001617",
+    "FranchiseeName": "Michael Johnson"
+  }, {
+    "FranchiseeLegacyCode": "ODO",
+    "FranchiseeCode": "PPP0055740",
+    "FranchiseeName": "Michael ODonnell"
+  }, {
+    "FranchiseeLegacyCode": "STE",
+    "FranchiseeCode": "PPP0001590",
+    "FranchiseeName": "Michael Stegman"
+  }, {
+    "FranchiseeLegacyCode": "ORA",
+    "FranchiseeCode": "PPP0055639",
+    "FranchiseeName": "Mike Oracion"
+  }, {
+    "FranchiseeLegacyCode": "PAM",
+    "FranchiseeCode": "PPP0001623",
+    "FranchiseeName": "Mike Patranella"
+  }, {
+    "FranchiseeLegacyCode": "FAY",
+    "FranchiseeCode": "PPP1123148",
+    "FranchiseeName": "Mohammad (Frank) Fayyaz"
+  }, {
+    "FranchiseeLegacyCode": "MPS",
+    "FranchiseeCode": "PPP1123147",
+    "FranchiseeName": "Mohinder Singh"
+  }, {
+    "FranchiseeLegacyCode": "RIE",
+    "FranchiseeCode": "PPP0001672",
+    "FranchiseeName": "Nancy Riemer"
+  }, {
+    "FranchiseeLegacyCode": "ARE",
+    "FranchiseeCode": "PPP1037821",
+    "FranchiseeName": "Neville Arestani"
+  }, {
+    "FranchiseeLegacyCode": "JNH",
+    "FranchiseeCode": "PPP0911549",
+    "FranchiseeName": "Nicole Nguyen Householder"
+  }, {
+    "FranchiseeLegacyCode": "STN",
+    "FranchiseeCode": "PPP0001713",
+    "FranchiseeName": "Norman Staab"
+  }, {
+    "FranchiseeLegacyCode": "LAD",
+    "FranchiseeCode": "PPP1061543",
+    "FranchiseeName": "Nuruddin (Noor) Ladhani"
+  }, {
+    "FranchiseeLegacyCode": "HAP",
+    "FranchiseeCode": "PPP0001747",
+    "FranchiseeName": "Pamela Beckom"
+  }, {
+    "FranchiseeLegacyCode": "KOZ",
+    "FranchiseeCode": "PPP0001790",
+    "FranchiseeName": "Paul Kozel"
+  }, {
+    "FranchiseeLegacyCode": "MOP",
+    "FranchiseeCode": "PPP0001792",
+    "FranchiseeName": "Paul Morris"
+  }, {
+    "FranchiseeLegacyCode": "TER",
+    "FranchiseeCode": "PPP0050524",
+    "FranchiseeName": "Phil Ternes"
+  }, {
+    "FranchiseeLegacyCode": "VIS",
+    "FranchiseeCode": "PPP1062385",
+    "FranchiseeName": "Premila Vishwanath"
+  }, {
+    "FranchiseeLegacyCode": "BIT",
+    "FranchiseeCode": "PPP0050697",
+    "FranchiseeName": "R Craig Bittner"
+  }, {
+    "FranchiseeLegacyCode": "BOO",
+    "FranchiseeCode": "PPP0050520",
+    "FranchiseeName": "Reginald Boothe"
+  }, {
+    "FranchiseeLegacyCode": "DIV",
+    "FranchiseeCode": "PPP0001950",
+    "FranchiseeName": "Richard Divelbiss"
+  }, {
+    "FranchiseeLegacyCode": "VES",
+    "FranchiseeCode": "PPP0056809",
+    "FranchiseeName": "Richard Vest"
+  }, {
+    "FranchiseeLegacyCode": "SEA",
+    "FranchiseeCode": "PPP0001971",
+    "FranchiseeName": "Rick Seagroves"
+  }, {
+    "FranchiseeLegacyCode": "CAD",
+    "FranchiseeCode": "PPP0002025",
+    "FranchiseeName": "Robert Cadwell"
+  }, {
+    "FranchiseeLegacyCode": "GEI",
+    "FranchiseeCode": "PPP0000193",
+    "FranchiseeName": "Robert Geist"
+  }, {
+    "FranchiseeLegacyCode": "HEI",
+    "FranchiseeCode": "PPP0002032",
+    "FranchiseeName": "Robert Hein"
+  }, {
+    "FranchiseeLegacyCode": "KOS",
+    "FranchiseeCode": "PPP0050711",
+    "FranchiseeName": "Robert Kennedy"
+  }, {
+    "FranchiseeLegacyCode": "RRB",
+    "FranchiseeCode": "PPP0823299",
+    "FranchiseeName": "Robert Laverdure"
+  }, {
+    "FranchiseeLegacyCode": "SCU",
+    "FranchiseeCode": "PPP0002003",
+    "FranchiseeName": "Robert Schulze"
+  }, {
+    "FranchiseeLegacyCode": "GAR",
+    "FranchiseeCode": "PPP0002043",
+    "FranchiseeName": "Roger Gates"
+  }, {
+    "FranchiseeLegacyCode": "MOH",
+    "FranchiseeCode": "PPP0002154",
+    "FranchiseeName": "Seesh Mohtheshum"
+  }, {
+    "FranchiseeLegacyCode": "RAJ",
+    "FranchiseeCode": "PPP1131815",
+    "FranchiseeName": "Soundararajan (Raj) Gopal"
+  }, {
+    "FranchiseeLegacyCode": "DUB",
+    "FranchiseeCode": "PPP0002217",
+    "FranchiseeName": "Stephen Dubert"
+  }, {
+    "FranchiseeLegacyCode": "CHC",
+    "FranchiseeCode": "PPP0055659",
+    "FranchiseeName": "Steve Chambers"
+  }, {
+    "FranchiseeLegacyCode": "HPK",
+    "FranchiseeCode": "PPP0057384",
+    "FranchiseeName": "Terry Hopkins"
+  }, {
+    "FranchiseeLegacyCode": "MLH",
+    "FranchiseeCode": "PPP0057384",
+    "FranchiseeName": "Terry Hopkins"
+  }, {
+    "FranchiseeLegacyCode": "MLR",
+    "FranchiseeCode": "PPP0057384",
+    "FranchiseeName": "Terry Hopkins"
+  }, {
+    "FranchiseeLegacyCode": "STR",
+    "FranchiseeCode": "PPP0057384",
+    "FranchiseeName": "Terry Hopkins"
+  }, {
+    "FranchiseeLegacyCode": "RUD",
+    "FranchiseeCode": "PPP0002327",
+    "FranchiseeName": "Terry Ruder"
+  }, {
+    "FranchiseeLegacyCode": "BRO",
+    "FranchiseeCode": "PPP0002367",
+    "FranchiseeName": "Thomas Brown"
+  }, {
+    "FranchiseeLegacyCode": "WAS",
+    "FranchiseeCode": "PPP0002404",
+    "FranchiseeName": "Thomas Jorgensen"
+  }, {
+    "FranchiseeLegacyCode": "LIN",
+    "FranchiseeCode": "PPP0002373",
+    "FranchiseeName": "Thomas Linehan"
+  }, {
+    "FranchiseeLegacyCode": "GAL",
+    "FranchiseeCode": "PPP0002447",
+    "FranchiseeName": "Valentine Galasso"
+  }, {
+    "FranchiseeLegacyCode": "VDC",
+    "FranchiseeCode": "PPP0002448",
+    "FranchiseeName": "Valerie Daniels-Carter"
+  }, {
+    "FranchiseeLegacyCode": "ATH",
+    "FranchiseeCode": "PPP0002468",
+    "FranchiseeName": "W. Atherton"
+  }, {
+    "FranchiseeLegacyCode": "BLG",
+    "FranchiseeCode": "PPP0002466",
+    "FranchiseeName": "W.Greg Blankenship"
+  }, {
+    "FranchiseeLegacyCode": "LOB",
+    "FranchiseeCode": "PPP0002487",
+    "FranchiseeName": "Wayne Lobdell"
+  }, {
+    "FranchiseeLegacyCode": "BLW",
+    "FranchiseeCode": "PPP0002492",
+    "FranchiseeName": "Wendell Blankenship"
+  }, {
+    "FranchiseeLegacyCode": "DAL",
+    "FranchiseeCode": "PPP0002535",
+    "FranchiseeName": "William Walsh"
+  }, {
+    "FranchiseeLegacyCode": "WOL",
+    "FranchiseeCode": "PPP0002553",
+    "FranchiseeName": "William Wolf"
+  }]
+}

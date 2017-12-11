@@ -1,0 +1,16 @@
+<div id="component-container" class="mssp">
+  <sd-breadcrumb [breadcrumbs]="breadcrumb"></sd-breadcrumb>
+
+  <h1>
+    Medicare Shared Savings Program Initial Application
+  </h1>
+
+  <sd-progress-bar></sd-progress-bar>
+  <dynamic-form
+  ngDefaultControl
+  [config]="config"
+  type="horizontal"
+  #form="dynamicForm"
+  (submit)="submit($event)">
+</dynamic-form>
+</div>

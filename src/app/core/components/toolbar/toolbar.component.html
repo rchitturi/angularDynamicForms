@@ -1,0 +1,137 @@
+﻿<header id="top">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+                (click)="isMenuCollapsed = !isMenuCollapsed"
+                data-toggle="collapse"
+                data-target="#nav-mobile"
+                aria-controls="nav-mobile"
+                aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" routerLink="/" data-toggle="collapse"
+           data-placement="bottom"
+           data-content="Accountable Care Organizations Managemment System"
+           title="Accountable Care Organizations Managemment System">ACO Management System</a>
+      </div>
+      <nav class="collapse navbar-collapse" id="nav-mobile"
+           [ngClass]="{'in': !isMenuCollapsed}"
+           aria-expanded="false">
+        <!--<ul class="nav navbar-nav navbar-right">-->
+
+          <!--<li class="sub-options dd">-->
+            <!--<a routerLink="#">FAQ</a>-->
+            <!--<nav>-->
+              <!--<ul>-->
+                <!--<li><a routerLink="#">Sub-section 1</a></li>-->
+                <!--<li><a routerLink="#">Sub-section 2</a></li>-->
+                <!--<li ><a routerLink="#">Sub-section 3</a></li>-->
+              <!--</ul>-->
+            <!--</nav>-->
+          <!--</li>-->
+          <!--<li class="sub-options dd">-->
+            <!--<a routerLink="#">Policy</a>-->
+            <!--<nav>-->
+              <!--<ul>-->
+                <!--<li><a routerLink="#">Sub-section 1</a></li>-->
+                <!--<li><a routerLink="#">Sub-section 2</a></li>-->
+                <!--<li ><a routerLink="#">Sub-section 3</a></li>-->
+
+              <!--</ul>-->
+            <!--</nav>-->
+          <!--</li>-->
+          <!--<li class="visible-md visible-lg" style="color:white; padding-top:10px">|</li>-->
+          <!--<li *ngIf="!signedIn">-->
+            <!--<a routerLink="/login">Sign In</a>-->
+          <!--</li>-->
+          <!--<li class="sub-options active" *ngIf="signedIn && userRole === 'ACOAdmin'">-->
+            <!--<a routerLink="#">Elizabeth Blackwell</a>-->
+            <!--<nav>-->
+              <!--<ul>-->
+                <!--<li [routerLinkActive]="['active']"><a routerLink="/aco">Dashboard</a></li>-->
+                <!--<li [routerLinkActive]="['active']"><a routerLink="/acoAccount">Accountable Care Organizations</a></li>-->
+                <!--<li [routerLinkActive]="['active']"><a routerLink="/user-management">User Management</a></li>-->
+                <!--<span class="subnav-right">-->
+                  <!--<li [routerLinkActive]="['active']"><a routerLink="/#"><span class="glyphicon glyphicon-bullhorn"></span><span class="badge badge-warning">{{activeNotifications.length}}</span></a></li>-->
+                  <!--<li [routerLinkActive]="['active']"><a routerLink="/my-account">My Account</a></li>-->
+                  <!--<li><a href="javascript:void(0);" (click)="logout()">Sign Out</a></li>-->
+                <!--</span>-->
+              <!--</ul>-->
+            <!--</nav>-->
+          <!--</li>-->
+          <!--<li class="sub-options active" *ngIf="signedIn && userRole === 'CMSAdmin'">-->
+            <!--<a routerLink="#">Kelly (CMS)</a>-->
+            <!--<nav>-->
+              <!--<ul>-->
+                <!--<li [routerLinkActive]="['active']"><a routerLink="/cms">Dashboard</a></li>-->
+                <!--<li [routerLinkActive]="['active']"><a routerLink="/acoAccount">Accountable Care Organizations</a></li>-->
+                <!--<li [routerLinkActive]="['active']"><a routerLink="/reports">Reports</a></li>-->
+                <!--<span class="subnav-right">-->
+                  <!--<li [routerLinkActive]="['active']"><a routerLink="#"><span class="glyphicon glyphicon-bullhorn"></span><span class="badge badge-warning">0</span></a></li>-->
+                  <!--<li [routerLinkActive]="['active']"><a routerLink="/my-account">My Account</a></li>-->
+                  <!--<li><a (click)="logout()">Sign Out</a></li>-->
+                <!--</span>-->
+              <!--</ul>-->
+            <!--</nav>-->
+          <!--</li>-->
+        <!--</ul>-->
+
+        <ul class="nav navbar-nav navbar-right">
+          <li dropdown>
+            <a href (click)="false"  dropdownToggle
+               role="button"
+               aria-haspopup="true"
+               aria-expanded="false">FAQ <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li dropdown>
+            <a href (click)="false" dropdownToggle
+               role="button"
+               aria-haspopup="true"
+               aria-expanded="false">Policy <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="visible-md visible-lg" style="color:white; padding-top:15px">|</li>
+          <ng-container *ngIf="!auth.state.auth || !auth.state.auth.loggedIn">
+            <li>
+            <a routerLink="/auth/login">Sign In</a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="auth.state.auth && auth.state.auth.loggedIn">
+            <li dropdown>
+              <a href (click)="false" dropdownToggle
+                 role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false">Logged In <span class="caret"></span></a>
+              <ul *dropdownMenu class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a routerLink="/auth/logout">Logout</a></li>
+              </ul>
+            </li>
+          </ng-container>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+</header>
+<a id="mainContent" tabindex="-1" name="mainContent" focus-method="focusMainContent" aria-label="Use the continue command to keep reading"></a>
+{{auth.state | json}}

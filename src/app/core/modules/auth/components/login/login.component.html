@@ -1,0 +1,39 @@
+<div id="component-container" class="login">
+  <section id="scroll-content">
+    <div class="container">
+
+      <!-- ### WHAT IS THE ACO-MS### -->
+      <div class="row clearfix">
+        <div class="col-md-8">
+          <a tabindex="-1" focus-target="focusQpp"></a>
+          <h1 id="page-title">Sign In</h1>
+          <div class="alert alert-warning">
+            <p>By entering authentication information, you are attempting to access a United States Federal Government information system. This system is for the use of authorized users only.</p>
+            <p>System usage may be monitored, recorded, and subject to audit. By accessing this system, you are consenting to having your activities to be monitored, recorded, and made available to auditors or law enforcement officials.</p>
+            <p>Unauthorized use of this information system or use in excess of your approved authority is prohibited, and may be subject to disciplinary action including criminal or civil penalties.</p>
+          </div>
+          <p class="tight">Enter CMS issued user id and password to login to ACO Management System.</p>
+          <div class="row clearfix">
+            <div class="col-md-9">
+              <dynamic-form
+                ngDefaultControl
+                [config]="config"
+                type="horizontal"
+                #form="dynamicForm"
+                (submit)="login($event)">
+              </dynamic-form>
+
+              <p><a routerLink="">Forgot User ID?</a> | <a routerLink="">Forgot password?</a></p>
+              <p><a target="_blank" href="http://idm.appfoundry.softrams.com/signup" title="This link opens in a new window."> New User Registration<span class="glyphicon glyphicon-chevron-right"></span></a></p>
+              <p>
+                Don't have an Identity &amp; Access account? Call 1-866-288-8292.<br>
+                For TTY: 1-877-715-6222.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

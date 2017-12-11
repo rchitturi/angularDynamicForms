@@ -1,0 +1,71 @@
+{
+  "mapSchedule": [{
+    "processId": 406,
+    "jobId": "027141_20161113844",
+    "dataSource": "POS",
+    "storeNumber": "027141",
+    "schedule": {
+      "POS": {
+        "type": "SCH",
+        "status": "CMPL",
+        "time": "2016-12-13T15:00:00.000Z"
+      },
+      "WEB": {
+        "type": "SCH",
+        "status": "CMPL",
+        "time": "2016-12-13T15:00:00.000Z"
+      }
+    }
+  }, {
+    "processId": 407,
+    "jobId": "316432_20161113850",
+    "dataSource": "POS",
+    "storeNumber": "316432",
+    "schedule": {
+      "POS": {
+        "type": "SCH",
+        "status": "CMPL",
+        "time": "2016-12-14T16:45:00.000Z"
+      },
+      "WEB": {
+        "type": "SCH",
+        "status": "PEND",
+        "time": "2016-12-14T17:45:00.000Z"
+      }
+    }
+  }, {
+    "processId": 408,
+    "jobId": "027248_20161113958",
+    "dataSource": "POS",
+    "storeNumber": "027248",
+    "schedule": {
+      "POS": {
+        "type": "SCH",
+        "status": "CMPL",
+        "time": "2016-12-17T16:00:00.000Z"
+      },
+      "WEB": {
+        "type": "SCH",
+        "status": "CMPL",
+        "time": "2016-12-17T16:00:00.000Z"
+      }
+    }
+  }, {
+    "processId": 408,
+    "jobId": "027248_20161113958",
+    "dataSource": "POS",
+    "storeNumber": "027250",
+    "schedule": {
+      "POS": {
+        "type": "IMM",
+        "status": "PEND",
+        "time": "2016-12-18T16:45:00.000Z"
+      },
+      "WEB": {
+        "type": "IMM",
+        "status": "PEND",
+        "time": "2016-12-18T16:45:00.000Z"
+      }
+    }
+  }]
+}

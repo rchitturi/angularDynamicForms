@@ -1,0 +1,24 @@
+<div class="dynamic-field form-input form-group" [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+fxLayout="{{config.inputConfig && config.inputConfig.alignment ? config.inputConfig.alignment : 'row'}}"
+fxLayout.lt-md="column" [formGroup]="group">
+<label class="control-label" [ngClass]="config.class ? config.class.join(' ').trim() : ''" for="{{config.name}}"
+    fxFlex="20"
+     [innerHTML]="config.label | sanitizeHtml">
+ </label>
+<div class="datepickerDiv">
+  <div fxLayout="row" class="input-area">
+    <input [formControlName]="config.name"
+           id="{{config.name}}"
+           type="text"
+           class="datepicker"
+           placeholder="{{config.placeholder}}"
+           (focus)="open()" (focusout)="close()"maxlength=0>
+
+    <span class="clearDate"><i class="fa fa-times-circle" (click)="clearDate()" aria-hidden="true"></i></span>
+    <span class="cal-icon"><i class="fa fa-calendar-o" (click)="open()" aria-hidden="true"></i></span>
+  </div>
+  <div class="datepicker-ul" role="menu" *ngIf="opened">
+    <datepicker [(ngModel)]="Date" [ngModelOptions]="{standalone: true}" (selectionDone)="onSelectionDone($event)" (mousedown)="onDatePicker()"></datepicker>
+  </div>
+</div>
+</div>

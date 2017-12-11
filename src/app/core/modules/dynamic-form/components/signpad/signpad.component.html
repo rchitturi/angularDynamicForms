@@ -1,0 +1,15 @@
+<div class="dynamic-field form-input form-group"
+     [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+     [formGroup]="group">
+  <label class="control-label"
+         [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+         fxFlex="20">{{ config.label }}</label>
+  <div fxLayout="column" fxFlex="80">
+    <app-signature-pad (click)="makeItTouched()" *ngIf="!config.value || !image" [formControlName]="config.name" id="config.name" #signPad></app-signature-pad>
+    <div *ngIf="config.value && image" ><img src={{config.value}} alt="Signature"></div>
+
+    <a *ngIf="!config.value || !image" (click)="clearIt()">Clear</a>
+    <a *ngIf="config.value && image" (click)="clearIt()">Retry</a>
+    <form-error-handler [config]="config" [group]="group"></form-error-handler>
+  </div>
+</div>

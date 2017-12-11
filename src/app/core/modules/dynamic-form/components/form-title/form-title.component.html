@@ -1,0 +1,6 @@
+<div
+  class="dynamic-field form-input form-group"
+  [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+  fxLayout="row" fxLayout.lt-md="column">
+  <div id="form-html" fxLayout="column" style="width: 100%;" [innerHTML]="config.html | sanitizeHtml"></div>
+</div>

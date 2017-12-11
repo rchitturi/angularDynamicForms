@@ -1,0 +1,5 @@
+<div class="row">
+  <ng-container *ngFor="let tab of contactTypes; let i = index;">
+    <button class="btn btn-default" [routerLink]="tab.path" [routerLinkActive]="['active']">{{tab.title}}</button>
+  </ng-container>
+</div>

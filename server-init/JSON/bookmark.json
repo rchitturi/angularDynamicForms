@@ -1,0 +1,73 @@
+{
+  "bookmarks": [
+    {
+      "processId": 1234,
+      "storeNumber": "006131",
+      "activeStep": "EXT",
+      "activeStepDescription" : "External Overlap",
+      "dataSource": "POS",
+      "userId": "MKY1234",
+      "steps": [
+        {
+          "stepCode": "CLN",
+          "stepDescription" : "Clean",
+          "completionStatus": true,
+          "executionOrder": 1,
+          "completionDate": "10/19/2016",
+          "completedBy": "MKY1234"
+        },
+        {
+          "stepCode": "EXT",
+          "stepDescription" : "External Overlap",
+          "completionStatus": false,
+          "executionOrder": 2,
+          "completionDate": "10/19/2016",
+          "completedBy": "MKY1234"
+        },
+        {
+          "stepCode": "USP",
+          "stepDescription" : "USPS",
+          "completionStatus": false,
+          "executionOrder": 3,
+          "completionDate": null,
+          "completedBy": "MKY1234"
+        }
+      ]
+    },
+    {
+      "processId": 1234,
+      "storeNumber": "027067",
+      "activeStep": "EXT",
+      "activeStepDescription" : "External Overlap",
+      "dataSource": "POS",
+      "userId": "MKY1234",
+      "steps": [
+        {
+          "stepCode": "CLN",
+          "stepDescription" : "Clean",
+          "completionStatus": true,
+          "executionOrder": 1,
+          "completionDate": "10/19/2016",
+          "completedBy": "MKY1234"
+        },
+        {
+          "stepCode": "EXT",
+          "stepDescription" : "External Overlap",
+          "completionStatus": false,
+          "executionOrder": 2,
+          "completionDate": "10/19/2016",
+          "completedBy": "MKY1234"
+        },
+        {
+          "stepCode": "USP",
+          "stepDescription" : "USPS",
+          "completionStatus": false,
+          "executionOrder": 3,
+          "completionDate": null,
+          "completedBy": "MKY1234"
+        }
+      ]
+    }
+  ]
+}
+

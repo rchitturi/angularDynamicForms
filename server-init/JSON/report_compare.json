@@ -1,0 +1,9 @@
+{
+	"reports": {
+		"reportType": "Compare",
+		"reportData": [{
+			"storeNumber": "123456",
+			"report": []
+		}]
+	}
+}

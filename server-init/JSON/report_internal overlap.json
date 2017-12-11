@@ -1,0 +1,9 @@
+{
+	"reports": {
+		"reportType": "Internal Overlap",
+		"reportData": [{
+			"storeNumber": "123456",
+			"report": []
+		}]
+	}
+}

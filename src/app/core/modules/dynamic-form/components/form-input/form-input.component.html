@@ -1,0 +1,24 @@
+<div
+  class="dynamic-field form-input form-group"
+  [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+  fxLayout="{{config.inputConfig && config.inputConfig.alignment ? config.inputConfig.alignment : 'row'}}"
+  fxLayout.lt-md="column"
+  [formGroup]="group">
+  <label class="control-label"
+         [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+         for="{{config.name}}"
+         fxFlex="20"
+         [innerHTML]="config.label | sanitizeHtml">
+  </label>
+  <div fxLayout="column" class="input-area" style="width: 100%;">
+    <input
+      type="{{config.formType ? config.formType : 'text'}}"
+      id="{{config.name}}"
+      class="{{!group.controls[config.name].valid&&group.controls[config.name].touched ? 'fmError' : ''}}"
+      [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+      [attr.placeholder]="config.placeholder"
+      [attr.readonly]="config.readonly ? true : null"
+      [formControlName]="config.name">
+    <form-error-handler [config]="config" [group]="group"></form-error-handler>
+  </div>
+</div>

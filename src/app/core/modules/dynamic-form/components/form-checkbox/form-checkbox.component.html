@@ -1,0 +1,24 @@
+<div
+  class="dynamic-field form-input input-area"
+  [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+  [ngStyle]="type==='horizontal' && (config.inputConfig && config.inputConfig.alignment==='normal') ? {'margin-left': '20%'} : ''"
+  [formGroup]="group">
+  <!--<ng-container [formArrayName]="config.name">-->
+  <ng-container
+    *ngFor="let checkbox of config.checkboxes"
+  >
+    <label
+      class="{{config.inline ? 'checkbox-inline' : 'checkbox'}}"
+      [ngClass]="config.class ? config.class.join(' ').trim() : ''">
+      <input
+        type="checkbox"
+        [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+        name="{{config.name}}"
+        [value]="checkbox.value"
+        [attr.checked]="config.value && config.value.length > 0 && config.value.indexOf(checkbox.value) > -1 ?
+          true : null"
+        (change)="onChange(checkbox.value, $event.target.checked)"> {{ checkbox.label }}
+    </label>
+  </ng-container>
+  <!--</ng-container>-->
+</div>

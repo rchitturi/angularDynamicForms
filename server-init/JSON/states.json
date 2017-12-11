@@ -1,0 +1,117 @@
+{
+  "StateList": [{
+    "StateCode": "TX",
+    "CityList": ["Madisonville", "San Antonio", "Longview", "Frisco", "Austin", "Caldwell", "Amarillo", "Grapevine", "Lago Vista", "Dallas", "Lubbock", "Mckinney", "Hearne", "Houston", "Plainview", "Plano"]
+  }, {
+    "StateCode": "FL",
+    "CityList": ["Panama City", "Clearwater", "Celebration", "Miami"]
+  }, {
+    "StateCode": "NV",
+    "CityList": ["Las Vegas"]
+  }, {
+    "StateCode": "WA",
+    "CityList": ["Mukilteo"]
+  }, {
+    "StateCode": "NY",
+    "CityList": ["New York", "Yorktown Heights", "Liverpool", "Glen Head"]
+  }, {
+    "StateCode": "SC",
+    "CityList": ["Charleston", "Myrtle Beach", "Greenwood"]
+  }, {
+    "StateCode": "SD",
+    "CityList": ["Rapid City"]
+  }, {
+    "StateCode": "QC",
+    "CityList": ["Greenfield Park"]
+  }, {
+    "StateCode": "WI",
+    "CityList": ["Milwaukee", "Madison", "Eau Claire", "Waukesha"]
+  }, {
+    "StateCode": "MA",
+    "CityList": ["Granville"]
+  }, {
+    "StateCode": "MD",
+    "CityList": ["Columbia", "Grasonville", "Sunderland"]
+  }, {
+    "StateCode": "IA",
+    "CityList": ["West Des Moines", "Mount Pleasant", "Ottumwa"]
+  }, {
+    "StateCode": "OH",
+    "CityList": ["Springboro", "Copley"]
+  }, {
+    "StateCode": "GA",
+    "CityList": ["Suwanee"]
+  }, {
+    "StateCode": "MI",
+    "CityList": ["Saint Joseph", "Stevensville"]
+  }, {
+    "StateCode": "OK",
+    "CityList": ["Norman", "Bristow", "Bartlesville", "Elk City", "Miami", "Tulsa"]
+  }, {
+    "StateCode": "CA",
+    "CityList": ["West Hills", "Adelanto", "Rosamond", "Orange"]
+  }, {
+    "StateCode": "UT",
+    "CityList": ["Washington"]
+  }, {
+    "StateCode": "MN",
+    "CityList": ["Thief River Falls", "New Hope"]
+  }, {
+    "StateCode": "MO",
+    "CityList": ["Lebanon", "Blue Springs", "Dexter"]
+  }, {
+    "StateCode": "WY",
+    "CityList": ["Cheyenne"]
+  }, {
+    "StateCode": "IL",
+    "CityList": ["Energy", "Chicago", "Itasca", "Kewanee"]
+  }, {
+    "StateCode": "IN",
+    "CityList": ["Kokomo", "Noblesville", "Bloomington", "Terre Haute", "Fort Wayne"]
+  }, {
+    "StateCode": "MS",
+    "CityList": ["Natchez"]
+  }, {
+    "StateCode": "KS",
+    "CityList": ["Overland Park", "Hays", "Topeka", "Wichita", "Newton", "Leawood", "Liberal", "Lawrence", "Maize", "Manhattan"]
+  }, {
+    "StateCode": "AK",
+    "CityList": ["Anchorage"]
+  }, {
+    "StateCode": "VA",
+    "CityList": ["Fredericksburg"]
+  }, {
+    "StateCode": "CO",
+    "CityList": ["Gunnison", "Denver", "Colorado City", "Golden"]
+  }, {
+    "StateCode": "KY",
+    "CityList": ["Crab Orchard", "Louisville"]
+  }, {
+    "StateCode": "PA",
+    "CityList": ["Dunmore", "Indiana", "Du Bois", "Feasterville", "Wexford", "Somerset"]
+  }, {
+    "StateCode": "NB",
+    "CityList": ["Woodstock"]
+  }, {
+    "StateCode": "LA",
+    "CityList": ["Lafayette"]
+  }, {
+    "StateCode": "NC",
+    "CityList": ["Matthews", "Greenville"]
+  }, {
+    "StateCode": "ND",
+    "CityList": ["Dickinson"]
+  }, {
+    "StateCode": "NE",
+    "CityList": ["Blair", "Grand Island", "West Point"]
+  }, {
+    "StateCode": "AZ",
+    "CityList": ["Tucson", "Kingman"]
+  }, {
+    "StateCode": "TN",
+    "CityList": ["Clarksville", "Waynesboro"]
+  }, {
+    "StateCode": "NJ",
+    "CityList": ["Edison", "Fairfield"]
+  }]
+}

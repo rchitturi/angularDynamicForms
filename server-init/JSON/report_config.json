@@ -1,0 +1,89 @@
+[{
+  "id": 1,
+  "name": "Send File",
+  "reportCriteria": [{
+    "id": 1,
+    "name": "Store No",
+    "order": 1,
+    "dataType": "TEXT"
+  }, {
+    "id": 2,
+    "name": "From Date",
+    "order": 2,
+    "dataType": "DATE"
+  }, {
+    "id": 3,
+    "name": "To Date",
+    "order": 3,
+    "dataType": "DATE"
+  }, {
+    "id": 4,
+    "name": "Destination",
+    "order": 4,
+    "dataType": "TEXT",
+    "options": ["Web", "Store", "Both"]
+  }],
+  "reportHeaders": []
+}, {
+  "id": 2,
+  "name": "Change Log",
+  "reportCriteria": [{
+    "id": 5,
+    "name": "Store No",
+    "order": 1,
+    "dataType": "TEXT"
+  }, {
+    "id": 6,
+    "name": "From Date",
+    "order": 2,
+    "dataType": "DATE"
+  }, {
+    "id": 7,
+    "name": "To Date",
+    "order": 3,
+    "dataType": "DATE"
+  }, {
+    "id": 8,
+    "name": "Action",
+    "order": 4,
+    "dataType": "TEXT",
+    "options": ["Added", "Changed", "Deleted", "All", "Ignored"]
+  }, {
+    "id": 9,
+    "name": "Step",
+    "order": 5,
+    "dataType": "TEXT",
+    "options": ["Internal Overlap", "External Overlap", "USPS", "Compare"]
+  }],
+  "reportHeaders": [{
+    "id": 1,
+    "name": "Store Number",
+    "dataType": "TEXT",
+    "order": 1
+  }, {
+    "id": 2,
+    "name": "Date",
+    "dataType": "DATE",
+    "order": 2
+  }, {
+    "id": 3,
+    "name": "Process Step",
+    "dataType": "TEXT",
+    "order": 3
+  }, {
+    "id": 4,
+    "name": "Action",
+    "dataType": "TEXT",
+    "order": 4
+  }, {
+    "id": 5,
+    "name": "Original Data",
+    "dataType": "TEXT",
+    "order": 5
+  }, {
+    "id": 6,
+    "name": "Modified Data",
+    "dataType": "TEXT",
+    "order": 6
+  }]
+}]

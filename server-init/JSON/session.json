@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+>
+<!-- Copyright (C) 2000 Tivoli Systems, Inc. -->
+<!-- Copyright (C) 1999 IBM Corporation -->
+<!-- Copyright (C) 1998 Dascom, Inc. -->
+<!-- All Rights Reserved. -->
+
+<html>
+<head>
+<title>Portal Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
+=no">
+<!-- Http to Https redirect-->
+<!-- ### Uncomment script below for Install ### -->
+<!--	<script type="txt/javascript">
+if (document.location.protocol != "https:") {
+document.location.href = "https://" + document.location.host + document.location.pathname;
+}
+</script> -->
+
+<!-- Site Environment and CSS Styling Calculation Script -->
+<script type="text/javascript">
+var hutenvironment = "";
+var str = '';
+var myURL = new String(document.location);
+//Site Url
+var brand = "Yum"; //default brand setting
+var portalUrlMappings = {"myhutlink.yum.com" : "Pizza_Hut","hutlink.yum.com" : "Pizza_Hut", "phmms
+.yum.com" : "Pizza_Hut"}; //Url to Site Mappings
+var portalEnviromentUrlMappings = {"qa" : "qa", "int" : "int"}; //Environment prefixes
+var hdPhoneNbr = '';
+//Authentication failed
+getEnviromentURLs();
+//Function to pull specific css rule from css by name
+function getStyle(ruleName) {
+var rules = document.styleSheets[0].rules || document.styleSheets[0].cssRules
+ruleName = ruleName.toUpperCase();
+if (rules == null){
+rules = "";
+}
+for(var x=0;x<rules.length;x++) {
+if(rules[x].selectorText.toUpperCase() == ruleName){
+break;
+}
+}
+return rules[x];
+}
+
+//Function to display login failure thru css edit
+function loginError(){
+var errorStyle = getStyle('.login li.error');
+errorStyle.style.visibility = 'visible';
+//errorStyle.style.removeProperty("visibility");
+//errorStyle.style.removeAttribute("visibility");
+}
+
+//Display brand error message
+function brandLoginMessage()
+{
+
+if (brand == "Pizza_Hut") {
+hdPhoneNbr = '<br><ul><li><span class="errorMSG">Non-SUS/FMS restaurant employees and their ARLs
+call 1-877-498-6277</span></li><li><span class="errorMSG">PH Corporate employees/ARL call 1-877-498-6986
+</span></li></ul>';
+}
+else {
+hdPhoneNbr = '<br><ul><li><span class="errorMSG">All Yum! employees please call the National Help
+Desk @ 1-877-498-6986</span></li></ul>';
+}
+
+document.getElementById('brand_error').innerHTML = hdPhoneNbr;
+}
+
+//Function to display cookie warning thru css edit
+function noCookiesError(){
+var cookieStyle = getStyle('p.cookieWarning');
+cookieStyle.style.removeProperty("visibility");
+cookieStyle.style.removeProperty("display");
+}
+
+//Function to inject proper css dependent on url
+function injectCSS(url){
+document.write('<link id="branding" rel="stylesheet" type="text/css" href="'+url+'">');
+
+}
+
+//Function to set brand, update Page Title, and identify which css url to inject.
+function setBrand(){
+var i;
+for (i in portalUrlMappings){
+if(myURL.search(i)>0){
+brand = portalUrlMappings[i];
+break;
+}
+//inject CSS is after the loop so the page can fall back to Yum just in case no brand is found
+}
+
+document.title = brand.replace("_", " ") + " " + document.title;
+injectCSS("https://"+hutenvironment+"hutlink.yum.com/images/css/"+brand+".css");
+jsurl = "https://"+hutenvironment+"hutlink.yum.com/images";
+setPageIcon(brand);
+
+}
+
+//Function to set page icon.
+function setPageIcon(brand){
+
+var link = document.createElement('link');
+link.rel = "shortcut icon";
+link.type = "image/x-icon";
+
+if (brand == 'Pizza_Hut'){
+link.href = "https://"+hutenvironment+"hutlink.yum.com/images/phicon.ico";
+
+}
+else {
+link.href = "https://"+hutenvironment+"hutlink.yum.com/images/yumicon.ico";
+}
+
+//document.head.appendChild(link);
+document.getElementsByTagName('head')[0].appendChild(link);
+
+}
+
+//Function for inner Text
+function setInnerHTMLText(){
+var i;
+for (i in portalUrlMappings){
+if(myURL.search(i)>0){
+brand = portalUrlMappings[i];
+break;
+}
+//inject CSS is after the loop so the page can fall back to Yum just in case no brand is found
+}
+
+
+if (brand == 'Pizza_Hut'){
+document.getElementById('legalPHI').style.display = "";
+var needAccess = document.getElementById("accessText");
+needAccess.innerHTML = "<i>First time to site?</i>";
+document.getElementById("accessText").style.paddingTop = '30px';
+document.getElementById("accessmsgID").removeAttribute("style");
+var msgAccess = document.getElementById("accessmsgID");
+msgAccess.innerHTML = "Click below to complete a Request for Access process. A request will be submitted
+to your organization for approval.";
+var forgetPaswd = document.getElementById("forgotPassword");
+forgetPaswd.innerHTML = "Reset Password";
+var links = document.getElementById("pizzHutLinks");
+links.style.display = "block";
+document.getElementById("phiErrTxt").innerHTML='Passwords are case sensitive.  Please check your
+Caps lock key.  If you have forgotten your username/password please use the "Reset Password" link.'
+;
+}
+else {
+
+}
+
+}
+// end of inner text.
+//Function to set environment prefix
+function injectEnvironmentTag(myEnvironment, myURLElement){
+
+var url = myURLElement.href.replace('/.*?:\/\//g', "");
+
+if(myEnvironment=="int" ){
+if(myURLElement.href.search("rfa.yum.com") > -1){
+myURLElement.href = "https://"+hutenvironment+"hutlink.yum.com/images/RFA_DNE.html"
+}
+else{
+myURLElement.href = url.replace('https://', "https://" + myEnvironment);
+}
+}
+else{
+myURLElement.href = url.replace('https://', "https://" + myEnvironment);
+}
+}
+
+//Function to pull each url on the page and add environment prefix
+function pullURLsToAdjust(myEnvironment){
+var tbFP = document.getElementById('forgotPassword');
+injectEnvironmentTag(myEnvironment, tbFP);
+var tbRFA = document.getElementById('RFA');
+injectEnvironmentTag(myEnvironment, tbRFA);
+var tacoUrl = document.getElementById('forgotPasswordTB');
+injectEnvironmentTag(myEnvironment, tacoUrl);
+var accesslinks = document.getElementById('accessLinks').getElementsByTagName("a");
+var i;
+for(var i = 0; i < accesslinks.length;i++){
+injectEnvironmentTag(myEnvironment, accesslinks[i]);
+}
+//for pizzahut rightside div links
+var pizzHutLinks = document.getElementById('pizzHutLinks').getElementsByTagName("a");
+var i;
+for(var i = 0; i < pizzHutLinks.length;i++){
+injectEnvironmentTag(myEnvironment, pizzHutLinks[i]);
+}
+}
+
+function getEnviromentURLs(){
+var environment = "";  //default to production
+var i;
+for(i in portalEnviromentUrlMappings){
+if(myURL.search(i)>0){
+environment = portalEnviromentUrlMappings[i];
+}
+}
+hutenvironment=environment;
+//	document.write('<script type="text/javascript" src="https://qahutlink.yum.com/images/js/cookie_code
+.js"/>');
+document.write("<script type=\"text/JavaScript\" src=\"https://"+environment+"hutlink.yum.com/images
+/js/cookie_code.js\"></"+"script>");
+}
+
+//Function that adds environment prefix
+function adjustEnviromentURLs(){
+var environment = "";  //default to production
+var i;
+for(i in portalEnviromentUrlMappings){
+if(myURL.search(i)>0){
+environment = portalEnviromentUrlMappings[i];
+}
+}
+
+if(environment.length >0){
+pullURLsToAdjust(environment);
+}
+}
+function tbcForgotePassLink(){
+if(brand.search('TacoBell') > -1){
+
+document.getElementById("TBForgotPassDiv").style.display = "block";
+document.getElementById("forgotPassword").style.display = "none";
+
+// displayTBError();
+}
+
+}
+// storing user in cookies
+
+function tbcGetUserName(){
+var cookieValue=readCookie("username");
+if(cookieValue!=null){
+var user;
+var count;
+count=  cookieValue.slice(-1);
+user=cookieValue.substring(0,7);
+var Intcount=parseInt(count);
+var tempUserVar=document.getElementById('username').value;
+var n=tempUserVar.length;
+if(n==10){
+tempUserVar=tempUserVar.substring(0,7);
+}
+
+if (user==tempUserVar){
+if(Intcount<1){
+Intcount++;
+}
+count = Intcount.toString();
+var cookieTempUserVar=tempUserVar.concat(count);
+SetCookie("username", cookieTempUserVar);
+
+}
+else {
+Intcount=0;
+count = Intcount.toString();
+
+var cookieTempUserVar=tempUserVar.concat(count);
+SetCookie("username", cookieTempUserVar);
+
+}
+} else {
+
+}
+
+}
+
+// Enter code starts.
+
+function displayTBError() {
+if(brand.search('TacoBell') > -1){
+document.onkeyup = function( evt ){
+if( ( window.event || evt ).keyCode == 13 ) {
+//tbcGetUserName();
+}
+}
+}
+}
+function callMethod(){
+tbcGetUserName();
+this.disabled=true;
+}
+//End of Start code.
+setBrand();
+</script>
+</head>
+<body  onload="tbcForgotePassLink();setInnerHTMLText();">
+<form id="frm" name="frm" action="/pkmslogin.form" method="POST">
+<div class="container">
+<div class="headerSpace">
+</div>
+<div class="wrapper">
+<div class="main">
+<p class="cookieWarning"><strong>WARNING:</strong> Your browser cookies are disabled, please enable
+them or you will be unable to login.</p>
+<div class="loginUI">
+<div class="access">
+<ul id="pizzHutLinks" style="display:none;">
+<li class="yumAccessLink"><a href="https://selfservice.yum.com/PasswordSelfService/SelfCare.jsp?select
+=ID">Forgot Username?</a></li>
+<li class="yumAccessLink"><a href="https://selfservice.yum.com/PasswordSelfService/SelfCare.jsp
+?select=CR">Reset Security Questions</a></li>
+</ul>
+
+<h3 id="accessText" style="padding-top:10px;">Need to Access the Site?</h3>
+
+<p class="accessMSG" id="accessmsgID" style="padding-top:10px;">Complete the Request for Access
+process. A request will be submitted to your organization's Security Approver for approval.</p>
+<br/>
+<a class="requestLink" id="RFA" href="https://portalrfa.yum.com/yumRFA/RequestForAccess.jsp"></a>
+</div>
+<div class="access2">
+<ul id="accessLinks" class="yumLinks">
+<li class="yumAccessLink"><a href="https://portalrfa.yum.com/yumRFA/RequestForAccess.jsp">Request
+for Access?</a></li>
+<li class="yumAccessLink"><a href="https://selfservice.yum.com/PasswordSelfService/SelfCare.jsp
+?select=PW">Reset/Forgot my Password</a></li>
+<li class="yumAccessLink"><a href="https://selfservice.yum.com/PasswordSelfService/SelfCare.jsp
+?select=ID">Forgot my User ID</a></li>
+<li class="yumAccessLink"><a href="https://selfservice.yum.com/PasswordSelfService/SelfCare.jsp
+?select=CR">Reset Security Questions</a></li>
+<li class="yumAccessLink"><a href="https://selfservice.yum.com/PasswordSelfService/SelfCare.jsp
+?select=ALT">Reset/Forgot my Password and Security Questions</a></li>
+</ul>
+</div>
+<div class="split">&nbsp</div>
+<div class="loginBlock">
+<ul class="loginLabels">
+<li class="inputLabel">Username:</li>
+<li class="inputLabel">Password:</li>
+</ul>
+<ul class="login">
+<li class="inputField"><input id="username" type="text" name="username" tabindex="1" aria-labelledby
+="Username" /></li>
+<li class="inputField"><input id="password" type="password" name="password"  tabindex="2" aria-labelledby
+="Password"/></li>
+<div style="margin-top:1px;display:none;color:red" id= "TBError"><p>Incorrect UserID/Password
+Combination</p></div>
+<li class="inputMSG"><a id='forgotPassword' href="https://selfservice.yum.com/PasswordSelfService
+/SelfCare.jsp?select=ALT"><p>Forgot your Username/Password?</p></a></li>
+
+<li><input id="submitBtn" type="submit" value="" name="submit1" onclick="callMethod();"></input
+></li>
+<div style="margin-top:50px;display:none;color:#FFFFFF;" id="TBForgotPassDiv"><p>Forgot your
+Username/Password? <a style=" text-decoration: underline;color:#FFFFFF;" id="forgotPasswordTB" href
+="https://selfservice.yum.com/PasswordSelfService/TBPwdSelfCare.jsp?select=ALT">Click here</a></p></div
+>
+<div style="margin-top:1px;display:none;color:#FFFF00;font-size:8px" id="TBForgotPassDiv2">
+<p style="font-family: verdana; font-size: 10px; height: 22px;margin: 0 0 0 5px;">After 5 incorrect tries
+for the same Username, your account will be locked out for 60 minutes</p></div>
+<li class="error"><p class="errorMSG">Incorrect UserID/Password Combination</p></li>
+<li class="error"><p id="phiErrTxt" class="errorReminder">Passwords are case sensitive.  Please
+check your Caps lock key.  If you have forgotten your username/password please use the "Forgot your
+Username/Password" link.</p></li>
+<li class="inputHidden"><input type="hidden" name="login-form-type" value="pwd"></li>
+</ul>
+</div>
+</div>
+
+<div id="brand_error">
+</div>
+<div class="footerSpace">
+</div>
+<div class="legal">
+<p id="legalPHI" style="display:none;">By accessing this website on a mobile device you agree to
+the following (do not access the website if you do not agree):  You may not access this website or its
+content unless you are authorized in writing or by electronic agreement by Yum to do so, and unless
+you also are a current employee or contractor of (i) Yum, (ii) a commonly owned affiliate of Yum ( KFC
+, Pizza Hut, and Taco Bell, each a "Brand"), (iii) a franchisee or licensee of a Brand, or (iv) an approved
+supplier or agency or consultant of Yum or a Brand. Use is limited solely to Yum system business purposes
+, and your use is limited further to only those portions of the website you are specifically authorized
+in writing to use. You may not download, capture or save (even on a temporary basis) any materials available
+on this website to a mobile device or transmit any content via a mobile device. Any unauthorized use
+of this website or content is strictly prohibited and may lead to loss of access, as well as to possible
+criminal and civil prosecution. This website and all content is the property of (or used by license
+by) Yum, and may be monitored by Yum (users should have no expectation of privacy). All usage must be
+in accordance with Yum policies regarding internet and content usage and security as posted by Yum from
+time to time.</p>
+
+</div>
+</div>
+</div>
+</div>
+</form>
+
+<!-- Test cookie settings -->
+<script type="text/javascript">
+document.cookie = 'acceptsCookies=yes';
+if (document.cookie == '') {
+noCookiesError();
+} else {
+document.cookie = 'acceptsCookies=yes; expires=Fri, 13-Apr-1970 00:00:00 GMT';
+}
+
+</script>
+
+
+<!-- Load Cookie code
+<script type="text/javascript" src="h/images/js/cookie_code.js"></script> -->
+
+
+<!-- test if login failed, display error.  Adjust Page EnvironmentUrls-->
+<script type="text/javascript">
+if (str.indexOf("Authentication failed") >= 0){
+var cookieValue=readCookie("username");
+if(cookieValue!=null){
+var user;
+var count;
+count=  cookieValue.slice(-1);
+var Intcount=parseInt(count);
+user=cookieValue.substring(0,7);
+} else{
+}
+
+if ((brand == "Taco_Bell" || brand == "MyTacoBell")){
+document.getElementById("TBError").style.display = "block";
+// change it into yellow
+document.getElementById("TBForgotPassDiv").style.color = "#F0E68C";
+document.getElementById("forgotPasswordTB").style.color = "#F0E68C";
+if (Intcount>=1){
+document.getElementById("TBForgotPassDiv").style.fontWeight = "bold";
+document.getElementById("forgotPasswordTB").style.fontWeight = "bold";
+document.getElementById("TBForgotPassDiv2").style.display = "block";
+}
+}
+if ( !(brand == "Taco_Bell" || brand == "MyTacoBell") ) {
+brandLoginMessage();
+loginError();
+}
+} else {
+var username;
+SetCookie("username", "noUserN0");
+}
+
+adjustEnviromentURLs();
+
+DeleteCookie('tb_legal_instore', '/');
+</script>
+
+</body>
+</html>

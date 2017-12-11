@@ -1,0 +1,294 @@
+<div id="component-container">
+  <h1 class="sample-content">Your Content Here</h1>
+Hello world
+  <hr />
+
+  <hr />
+
+  <div>
+    <h4>Local State</h4>
+
+    <pre>
+      Local State: {{localState.value}}
+    </pre>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">State</div>
+      <div class="panel-body">
+        <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
+          <div fxLayout="row">
+            <div fxFlex="80">
+              <input id="inputDefault" class="form-control"
+                     [value]="localState.value"
+                     (input)="localState.value = $event.target.value"
+                     placeholder="Submit Local State to App State"
+                     autofocus>
+            </div>
+            <div fxFlex="20">
+              <button class="btn btn-primary">Submit Value</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Form Builder</div>
+      <div class="panel-body">
+        <div class="app">
+          <div class="app">
+            <dynamic-form
+              ngDefaultControl
+              [config]="config"
+              type="horizontal"
+              #form="dynamicForm"
+              (submit)="submit($event)">
+            </dynamic-form>
+            {{ form.valid }}
+            {{ form.value | json }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Modal & Toasters</div>
+      <div class="panel-body">
+        <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+
+        <button type="button" class="btn btn-primary" (click)="openToasterSuccess()">Success</button>
+
+        <button type="button" class="btn btn-primary" (click)="openToasterWarning()">Warning</button>
+
+        <button type="button" class="btn btn-primary" (click)="openToasterError()">Error</button>
+
+        <button type="button" class="btn btn-primary" (click)="openToasterInfo()">Info</button>
+
+        <button type="button" class="btn btn-primary" (click)="openToasterBare()">Bare</button>
+
+        <button type="button" class="btn btn-primary" (click)="openToasterAlert()">Alert</button>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Alerts</div>
+      <div class="panel-body">
+        <alert type="success">
+          <strong>Well done!</strong> You successfully read this important alert message.
+        </alert>
+        <alert type="info">
+          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </alert>
+        <alert type="warning">
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </alert>
+        <alert type="danger">
+          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </alert>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Drop Down</div>
+      <div class="panel-body">
+        <div class="btn-group" dropdown>
+          <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+            Button dropdown <span class="caret"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div fxLayout="row">
+        <div fxFlex="50">
+          <div id="weather">
+            <h1>{{city}}</h1>
+            <ul>
+              <li *ngFor="let w of weather">
+                <span>DATE:</span> {{w.dt * 1000 | date: 'MM/dd/yyyy'}} <br />
+                <span>MIN:</span> {{w.temp.min}} <br />
+                <span>MAX:</span> {{w.temp.max}} <br />
+                <span>DESCR:</span> {{w.weather[0].description}}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div fxFlex="50">
+          <div *ngIf="data.city !== undefined">
+            <div [innerHTML]="data.city.name">
+            </div>
+            <ul>
+              <li *ngFor="let w of data.list">
+                <span>DATE:</span> {{w.dt * 1000 | date: 'MM/dd/yyyy'}} <br />
+                <span>MIN:</span> {{w.temp.min}} <br />
+                <span>MAX:</span> {{w.temp.max}} <br />
+                <span>DESCR:</span> {{w.weather[0].description}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">PopOvers</div>
+      <div class="panel-body">
+        <button type="button" class="btn btn-default btn-secondary"
+                popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                popoverTitle="Popover on left"
+                placement="left">
+          Popover on left
+        </button>
+
+        <button type="button" class="btn btn-default btn-secondary"
+                popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                popoverTitle="Popover on top"
+                placement="top">
+          Popover on top
+        </button>
+
+        <button type="button" class="btn btn-default btn-secondary"
+                popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                popoverTitle="Popover on bottom"
+                placement="bottom">
+          Popover on bottom
+        </button>
+
+        <button type="button" class="btn btn-default btn-secondary"
+                popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                popoverTitle="Popover on right"
+                placement="right">
+          Popover on right
+        </button>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">ToolTips</div>
+      <div class="panel-body">
+        <button type="button" class="btn btn-default btn-secondary"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="left">
+          Tooltip on left
+        </button>
+
+        <button type="button" class="btn btn-default btn-secondary"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="top">
+          Tooltip on top
+        </button>
+
+        <button type="button" class="btn btn-default btn-secondary"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="bottom">
+          Tooltip on bottom
+        </button>
+
+        <button type="button" class="btn btn-default btn-secondary"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="right">
+          Tooltip on right
+        </button>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Tabs</div>
+      <div class="panel-body">
+        <div>
+          <tabset>
+            <tab heading="Static title">Static content</tab>
+            <tab heading="Static Title 1">Static content 1</tab>
+            <tab heading="Static Title 2">Static content 2</tab>
+            <tab (select)="alertMe()">
+              <template tabHeading>
+                <i class="glyphicon glyphicon-bell"></i> Alert!
+              </template>
+              I've got an HTML heading, and a select callback. Pretty cool!
+            </tab>
+          </tabset>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Accordian</div>
+      <div class="panel-body">
+        <accordion>
+          <accordion-group heading="Static Header, initially expanded">
+            This content is straight in the template.
+          </accordion-group>
+          <accordion-group #group>
+            <div accordion-heading>
+              I can have markup, too!
+              <i class="pull-right float-xs-right glyphicon"
+                 [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+            </div>
+            This is just some content to illustrate fancy headings.
+          </accordion-group>
+          <accordion-group heading="Content 1">
+            <p>Content 1</p>
+          </accordion-group>
+          <accordion-group heading="Content 2">
+            <p>Content 2</p>
+          </accordion-group>
+        </accordion>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Sortables</div>
+      <div class="panel-body">
+        <div class="col-xs-6 col-md-3">
+          <bs-sortable
+            [(ngModel)]="itemStringsLeft"
+            itemClass="sortable-item"
+            itemActiveClass="sortable-item-active"
+            placeholderItem="Drag here"
+            placeholderClass="placeholderStyle"
+            wrapperClass="sortable-wrapper"
+          ></bs-sortable>
+          <pre>model: {{ itemStringsLeft | json }}</pre>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <bs-sortable
+            [(ngModel)]="itemStringsRight"
+            itemClass="sortable-item"
+            itemActiveClass="sortable-item-active"
+            placeholderItem="Drag here"
+            placeholderClass="sortable-item"
+            wrapperClass="sortable-wrapper"
+          ></bs-sortable>
+          <pre>model: {{ itemStringsRight | json }}</pre>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+</div>
+
+<template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</template>

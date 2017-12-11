@@ -1,0 +1,56 @@
+{
+  "headers": [{
+    "id": 7,
+    "name": "Store Number",
+    "dataType": "TEXT",
+    "order": 1,
+    "refAttribute": "storeNo"
+  }, {
+    "id": 8,
+    "name": "Destination",
+    "dataType": "TEXT",
+    "order": 2,
+    "refAttribute": "destination"
+  }, {
+    "id": 9,
+    "name": "Schedule Date",
+    "dataType": "DATE",
+    "order": 3,
+    "refAttribute": "scheduleDate"
+  }, {
+    "id": 10,
+    "name": "Complete Date",
+    "dataType": "DATE",
+    "order": 4,
+    "refAttribute": "completeDate"
+  }, {
+    "id": 14,
+    "name": "Request Date",
+    "dataType": "DATE",
+    "order": 5,
+    "refAttribute": "scheduledStatus"
+  }, {
+    "id": 11,
+    "name": "Request By",
+    "dataType": "TEXT",
+    "order": 6,
+    "refAttribute": "requestBy"
+  }, {
+    "id": 12,
+    "name": "Status",
+    "dataType": "TEXT",
+    "order": 7,
+    "refAttribute": "requestDate"
+  }],
+  "data": [
+    {
+      "storeNo": "744201",
+      "destination": "N BERWICK DR 77429 BOTH 22000 22007 G-04",
+      "scheduleDate": "Conflict : 1 Store : 744201 Address Details :  N BERWICK DR 77095 BOTH 22000 22007 G-04",
+      "completeDate": null,
+      "scheduledStatus": "N BERWICK DR 77429 BOTH 22000 22007 G-04",
+      "requestBy": "Conflict : 1 Store : 744201 Address Details :  N BERWICK DR 77095 BOTH 22000 22007 G-04",
+      "requestDate": "Conflict : 1 Store : 744201 Address Details :  N BERWICK DR 77095 BOTH 22000 22007 G-04"
+    }
+  ]
+}

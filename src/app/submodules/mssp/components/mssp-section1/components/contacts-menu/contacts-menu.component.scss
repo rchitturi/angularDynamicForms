@@ -1,0 +1,16 @@
+button {
+  width: 110px;
+  word-wrap: break-word;
+  white-space: normal;
+  height: 55px;
+  &.active {
+    color: #ffffff;
+    background-color: #ff851b;
+    border-color: #ff7701;
+  }
+  &:hover {
+    color: #ffffff;
+    background-color: #ff851b;
+    border-color: #ff7701;
+  }
+}

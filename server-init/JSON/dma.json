@@ -1,0 +1,624 @@
+{
+  "DMAList": [{
+    "DmaCode": "500",
+    "DmaDescription": "PORTLAND-AUBURN"
+  }, {
+    "DmaCode": "501",
+    "DmaDescription": "NEW YORK"
+  }, {
+    "DmaCode": "502",
+    "DmaDescription": "BINGHAMTON"
+  }, {
+    "DmaCode": "503",
+    "DmaDescription": "MACON"
+  }, {
+    "DmaCode": "504",
+    "DmaDescription": "PHILADELPHIA"
+  }, {
+    "DmaCode": "505",
+    "DmaDescription": "DETROIT"
+  }, {
+    "DmaCode": "506",
+    "DmaDescription": "BOSTON"
+  }, {
+    "DmaCode": "507",
+    "DmaDescription": "SAVANNAH"
+  }, {
+    "DmaCode": "508",
+    "DmaDescription": "PITTSBURGH"
+  }, {
+    "DmaCode": "509",
+    "DmaDescription": "FT. WAYNE"
+  }, {
+    "DmaCode": "510",
+    "DmaDescription": "CLEVELAND"
+  }, {
+    "DmaCode": "511",
+    "DmaDescription": "WASHINGTON DC"
+  }, {
+    "DmaCode": "512",
+    "DmaDescription": "BALTIMORE"
+  }, {
+    "DmaCode": "513",
+    "DmaDescription": "FLINT-SAGINAW-BAY CITY"
+  }, {
+    "DmaCode": "514",
+    "DmaDescription": "BUFFALO"
+  }, {
+    "DmaCode": "515",
+    "DmaDescription": "CINCINNATI"
+  }, {
+    "DmaCode": "516",
+    "DmaDescription": "ERIE"
+  }, {
+    "DmaCode": "517",
+    "DmaDescription": "CHARLOTTE"
+  }, {
+    "DmaCode": "518",
+    "DmaDescription": "GREENSBORO-H.POINT-W.SALEM"
+  }, {
+    "DmaCode": "519",
+    "DmaDescription": "CHARLESTON SC"
+  }, {
+    "DmaCode": "520",
+    "DmaDescription": "AUGUSTA"
+  }, {
+    "DmaCode": "521",
+    "DmaDescription": "PROVIDENCE-NEW BEDFORD"
+  }, {
+    "DmaCode": "522",
+    "DmaDescription": "COLUMBUS GA"
+  }, {
+    "DmaCode": "523",
+    "DmaDescription": "BURLINGTON-PLATTSBURGH"
+  }, {
+    "DmaCode": "524",
+    "DmaDescription": "ATLANTA"
+  }, {
+    "DmaCode": "525",
+    "DmaDescription": "ALBANY GA"
+  }, {
+    "DmaCode": "526",
+    "DmaDescription": "UTICA"
+  }, {
+    "DmaCode": "527",
+    "DmaDescription": "INDIANAPOLIS"
+  }, {
+    "DmaCode": "528",
+    "DmaDescription": "MIAMI-FT. LAUDERDALE"
+  }, {
+    "DmaCode": "529",
+    "DmaDescription": "LOUISVILLE"
+  }, {
+    "DmaCode": "530",
+    "DmaDescription": "TALLAHASSEE-THOMASVILLE"
+  }, {
+    "DmaCode": "531",
+    "DmaDescription": "TRI-CITIES TN-VA"
+  }, {
+    "DmaCode": "532",
+    "DmaDescription": "ALBANY-SCHENECTADY-TROY"
+  }, {
+    "DmaCode": "533",
+    "DmaDescription": "HARTFORD & NEW HAVEN"
+  }, {
+    "DmaCode": "534",
+    "DmaDescription": "ORLANDO-DAYTONA BCH-MELBRN"
+  }, {
+    "DmaCode": "535",
+    "DmaDescription": "COLUMBUS OH"
+  }, {
+    "DmaCode": "536",
+    "DmaDescription": "YOUNGSTOWN"
+  }, {
+    "DmaCode": "537",
+    "DmaDescription": "BANGOR"
+  }, {
+    "DmaCode": "538",
+    "DmaDescription": "ROCHESTER NY"
+  }, {
+    "DmaCode": "539",
+    "DmaDescription": "TAMPA-ST. PETE-SARASOTA"
+  }, {
+    "DmaCode": "540",
+    "DmaDescription": "TRAVERSE CITY-CADILLAC"
+  }, {
+    "DmaCode": "541",
+    "DmaDescription": "LEXINGTON"
+  }, {
+    "DmaCode": "542",
+    "DmaDescription": "DAYTON"
+  }, {
+    "DmaCode": "543",
+    "DmaDescription": "SPRINGFIELD-HOLYOKE"
+  }, {
+    "DmaCode": "544",
+    "DmaDescription": "NORFOLK-PORTSMTH-NEWPT NWS"
+  }, {
+    "DmaCode": "545",
+    "DmaDescription": "GREENVILLE-N.BERN-WASHNGTN"
+  }, {
+    "DmaCode": "546",
+    "DmaDescription": "COLUMBIA SC"
+  }, {
+    "DmaCode": "547",
+    "DmaDescription": "TOLEDO"
+  }, {
+    "DmaCode": "548",
+    "DmaDescription": "WEST PALM BEACH-FT. PIERCE"
+  }, {
+    "DmaCode": "549",
+    "DmaDescription": "WATERTOWN"
+  }, {
+    "DmaCode": "550",
+    "DmaDescription": "WILMINGTON"
+  }, {
+    "DmaCode": "551",
+    "DmaDescription": "LANSING"
+  }, {
+    "DmaCode": "552",
+    "DmaDescription": "PRESQUE ISLE"
+  }, {
+    "DmaCode": "553",
+    "DmaDescription": "MARQUETTE"
+  }, {
+    "DmaCode": "554",
+    "DmaDescription": "WHEELING-STEUBENVILLE"
+  }, {
+    "DmaCode": "555",
+    "DmaDescription": "SYRACUSE"
+  }, {
+    "DmaCode": "556",
+    "DmaDescription": "RICHMOND-PETERSBURG"
+  }, {
+    "DmaCode": "557",
+    "DmaDescription": "KNOXVILLE"
+  }, {
+    "DmaCode": "558",
+    "DmaDescription": "LIMA"
+  }, {
+    "DmaCode": "559",
+    "DmaDescription": "BLUEFIELD-BECKLEY-OAK HILL"
+  }, {
+    "DmaCode": "560",
+    "DmaDescription": "RALEIGH-DURHAM"
+  }, {
+    "DmaCode": "561",
+    "DmaDescription": "JACKSONVILLE-BRUNSWICK"
+  }, {
+    "DmaCode": "563",
+    "DmaDescription": "GRAND RAPIDS-KALMZOO-B.CRK"
+  }, {
+    "DmaCode": "564",
+    "DmaDescription": "CHARLESTON-HUNTINGTON"
+  }, {
+    "DmaCode": "565",
+    "DmaDescription": "ELMIRA"
+  }, {
+    "DmaCode": "566",
+    "DmaDescription": "HARRISBURG-LNCSTR-LEB-YORK"
+  }, {
+    "DmaCode": "567",
+    "DmaDescription": "GREENVLL-SPART-ASHEVLL-AND"
+  }, {
+    "DmaCode": "569",
+    "DmaDescription": "HARRISONBURG"
+  }, {
+    "DmaCode": "570",
+    "DmaDescription": "FLORENCE-MYRTLE BEACH"
+  }, {
+    "DmaCode": "571",
+    "DmaDescription": "FT. MYERS-NAPLES"
+  }, {
+    "DmaCode": "573",
+    "DmaDescription": "ROANOKE-LYNCHBURG"
+  }, {
+    "DmaCode": "574",
+    "DmaDescription": "JOHNSTOWN-ALTOONA"
+  }, {
+    "DmaCode": "575",
+    "DmaDescription": "CHATTANOOGA"
+  }, {
+    "DmaCode": "576",
+    "DmaDescription": "SALISBURY"
+  }, {
+    "DmaCode": "577",
+    "DmaDescription": "WILKES BARRE-SCRANTON"
+  }, {
+    "DmaCode": "581",
+    "DmaDescription": "TERRE HAUTE"
+  }, {
+    "DmaCode": "582",
+    "DmaDescription": "LAFAYETTE IN"
+  }, {
+    "DmaCode": "583",
+    "DmaDescription": "ALPENA"
+  }, {
+    "DmaCode": "584",
+    "DmaDescription": "CHARLOTTESVILLE"
+  }, {
+    "DmaCode": "588",
+    "DmaDescription": "SOUTH BEND-ELKHART"
+  }, {
+    "DmaCode": "592",
+    "DmaDescription": "GAINESVILLE"
+  }, {
+    "DmaCode": "596",
+    "DmaDescription": "ZANESVILLE"
+  }, {
+    "DmaCode": "597",
+    "DmaDescription": "PARKERSBURG"
+  }, {
+    "DmaCode": "598",
+    "DmaDescription": "CLARKSBURG-WESTON"
+  }, {
+    "DmaCode": "600",
+    "DmaDescription": "CORPUS CHRISTI"
+  }, {
+    "DmaCode": "602",
+    "DmaDescription": "CHICAGO"
+  }, {
+    "DmaCode": "603",
+    "DmaDescription": "JOPLIN-PITTSBURG"
+  }, {
+    "DmaCode": "604",
+    "DmaDescription": "COLUMBIA-JEFFERSON CITY"
+  }, {
+    "DmaCode": "605",
+    "DmaDescription": "TOPEKA"
+  }, {
+    "DmaCode": "606",
+    "DmaDescription": "DOTHAN"
+  }, {
+    "DmaCode": "609",
+    "DmaDescription": "ST. LOUIS"
+  }, {
+    "DmaCode": "610",
+    "DmaDescription": "ROCKFORD"
+  }, {
+    "DmaCode": "611",
+    "DmaDescription": "ROCHESTR-MASON CITY-AUSTIN"
+  }, {
+    "DmaCode": "612",
+    "DmaDescription": "SHREVEPORT"
+  }, {
+    "DmaCode": "613",
+    "DmaDescription": "MINNEAPOLIS-ST. PAUL"
+  }, {
+    "DmaCode": "616",
+    "DmaDescription": "KANSAS CITY"
+  }, {
+    "DmaCode": "617",
+    "DmaDescription": "MILWAUKEE"
+  }, {
+    "DmaCode": "618",
+    "DmaDescription": "HOUSTON"
+  }, {
+    "DmaCode": "619",
+    "DmaDescription": "SPRINGFIELD MO"
+  }, {
+    "DmaCode": "622",
+    "DmaDescription": "NEW ORLEANS"
+  }, {
+    "DmaCode": "623",
+    "DmaDescription": "DALLAS-FT. WORTH"
+  }, {
+    "DmaCode": "624",
+    "DmaDescription": "SIOUX CITY"
+  }, {
+    "DmaCode": "625",
+    "DmaDescription": "WACO-TEMPLE-BRYAN"
+  }, {
+    "DmaCode": "626",
+    "DmaDescription": "VICTORIA"
+  }, {
+    "DmaCode": "627",
+    "DmaDescription": "WICHITA FALLS & LAWTON"
+  }, {
+    "DmaCode": "628",
+    "DmaDescription": "MONROE-EL DORADO"
+  }, {
+    "DmaCode": "630",
+    "DmaDescription": "BIRMINGHAM"
+  }, {
+    "DmaCode": "631",
+    "DmaDescription": "OTTUMWA-KIRKSVILLE"
+  }, {
+    "DmaCode": "632",
+    "DmaDescription": "PADUCAH-C.GIRD-HARBG-MT VN"
+  }, {
+    "DmaCode": "633",
+    "DmaDescription": "ODESSA-MIDLAND"
+  }, {
+    "DmaCode": "634",
+    "DmaDescription": "AMARILLO"
+  }, {
+    "DmaCode": "635",
+    "DmaDescription": "AUSTIN"
+  }, {
+    "DmaCode": "636",
+    "DmaDescription": "HARLINGEN-WSLCO-BRNSVL-MCA"
+  }, {
+    "DmaCode": "637",
+    "DmaDescription": "CEDAR RAPIDS-WATERLOO&DUBQ"
+  }, {
+    "DmaCode": "638",
+    "DmaDescription": "ST. JOSEPH"
+  }, {
+    "DmaCode": "639",
+    "DmaDescription": "JACKSON TN"
+  }, {
+    "DmaCode": "640",
+    "DmaDescription": "MEMPHIS"
+  }, {
+    "DmaCode": "641",
+    "DmaDescription": "SAN ANTONIO"
+  }, {
+    "DmaCode": "642",
+    "DmaDescription": "LAFAYETTE LA"
+  }, {
+    "DmaCode": "643",
+    "DmaDescription": "LAKE CHARLES"
+  }, {
+    "DmaCode": "644",
+    "DmaDescription": "ALEXANDRIA LA"
+  }, {
+    "DmaCode": "647",
+    "DmaDescription": "GREENWOOD-GREENVILLE"
+  }, {
+    "DmaCode": "648",
+    "DmaDescription": "CHAMPAIGN&SPRNGFLD-DECATUR"
+  }, {
+    "DmaCode": "649",
+    "DmaDescription": "EVANSVILLE"
+  }, {
+    "DmaCode": "650",
+    "DmaDescription": "OKLAHOMA CITY"
+  }, {
+    "DmaCode": "651",
+    "DmaDescription": "LUBBOCK"
+  }, {
+    "DmaCode": "652",
+    "DmaDescription": "OMAHA"
+  }, {
+    "DmaCode": "656",
+    "DmaDescription": "PANAMA CITY"
+  }, {
+    "DmaCode": "657",
+    "DmaDescription": "SHERMAN-ADA"
+  }, {
+    "DmaCode": "658",
+    "DmaDescription": "GREEN BAY-APPLETON"
+  }, {
+    "DmaCode": "659",
+    "DmaDescription": "NASHVILLE"
+  }, {
+    "DmaCode": "661",
+    "DmaDescription": "SAN ANGELO"
+  }, {
+    "DmaCode": "662",
+    "DmaDescription": "ABILENE-SWEETWATER"
+  }, {
+    "DmaCode": "669",
+    "DmaDescription": "MADISON"
+  }, {
+    "DmaCode": "670",
+    "DmaDescription": "FT. SMITH"
+  }, {
+    "DmaCode": "671",
+    "DmaDescription": "TULSA"
+  }, {
+    "DmaCode": "673",
+    "DmaDescription": "COLUMBUS-TUPELO-WEST POINT"
+  }, {
+    "DmaCode": "675",
+    "DmaDescription": "PEORIA-BLOOMINGTON"
+  }, {
+    "DmaCode": "676",
+    "DmaDescription": "DULUTH-SUPERIOR"
+  }, {
+    "DmaCode": "678",
+    "DmaDescription": "WICHITA-HUTCHINSON PLUS"
+  }, {
+    "DmaCode": "679",
+    "DmaDescription": "DES MOINES-AMES"
+  }, {
+    "DmaCode": "682",
+    "DmaDescription": "DAVENPORT-R.ISLAND-MOLINE"
+  }, {
+    "DmaCode": "686",
+    "DmaDescription": "MOBILE-PENSACOLA"
+  }, {
+    "DmaCode": "687",
+    "DmaDescription": "MINOT-BISMARCK-DICKINSON"
+  }, {
+    "DmaCode": "691",
+    "DmaDescription": "HUNTSVILLE-DECATUR-FLOR"
+  }, {
+    "DmaCode": "692",
+    "DmaDescription": "BEAUMONT-PORT ARTHUR"
+  }, {
+    "DmaCode": "693",
+    "DmaDescription": "LITTLE ROCK-PINE BLUFF"
+  }, {
+    "DmaCode": "698",
+    "DmaDescription": "MONTGOMERY"
+  }, {
+    "DmaCode": "702",
+    "DmaDescription": "LA CROSSE-EAU CLAIRE"
+  }, {
+    "DmaCode": "705",
+    "DmaDescription": "WAUSAU-RHINELANDER"
+  }, {
+    "DmaCode": "709",
+    "DmaDescription": "TYLER-LONGVIEW(LFKN&NCGD)"
+  }, {
+    "DmaCode": "710",
+    "DmaDescription": "HATTIESBURG-LAUREL"
+  }, {
+    "DmaCode": "711",
+    "DmaDescription": "MERIDIAN"
+  }, {
+    "DmaCode": "716",
+    "DmaDescription": "BATON ROUGE"
+  }, {
+    "DmaCode": "717",
+    "DmaDescription": "QUINCY-HANNIBAL-KEOKUK"
+  }, {
+    "DmaCode": "718",
+    "DmaDescription": "JACKSON MS"
+  }, {
+    "DmaCode": "722",
+    "DmaDescription": "LINCOLN & HASTINGS-KRNY"
+  }, {
+    "DmaCode": "724",
+    "DmaDescription": "FARGO-VALLEY CITY"
+  }, {
+    "DmaCode": "725",
+    "DmaDescription": "SIOUX FALLS(MITCHELL)"
+  }, {
+    "DmaCode": "734",
+    "DmaDescription": "JONESBORO"
+  }, {
+    "DmaCode": "736",
+    "DmaDescription": "BOWLING GREEN"
+  }, {
+    "DmaCode": "737",
+    "DmaDescription": "MANKATO"
+  }, {
+    "DmaCode": "740",
+    "DmaDescription": "NORTH PLATTE"
+  }, {
+    "DmaCode": "743",
+    "DmaDescription": "ANCHORAGE"
+  }, {
+    "DmaCode": "745",
+    "DmaDescription": "FAIRBANKS"
+  }, {
+    "DmaCode": "746",
+    "DmaDescription": "BILOXI-GULFPORT"
+  }, {
+    "DmaCode": "749",
+    "DmaDescription": "LAREDO"
+  }, {
+    "DmaCode": "751",
+    "DmaDescription": "DENVER"
+  }, {
+    "DmaCode": "752",
+    "DmaDescription": "COLORADO SPRINGS-PUEBLO"
+  }, {
+    "DmaCode": "753",
+    "DmaDescription": "PHOENIX"
+  }, {
+    "DmaCode": "754",
+    "DmaDescription": "BUTTE-BOZEMAN"
+  }, {
+    "DmaCode": "755",
+    "DmaDescription": "GREAT FALLS"
+  }, {
+    "DmaCode": "756",
+    "DmaDescription": "BILLINGS"
+  }, {
+    "DmaCode": "757",
+    "DmaDescription": "BOISE"
+  }, {
+    "DmaCode": "758",
+    "DmaDescription": "IDAHO FALLS-POCATELLO"
+  }, {
+    "DmaCode": "759",
+    "DmaDescription": "CHEYENNE-SCOTTSBLUF-STRLNG"
+  }, {
+    "DmaCode": "760",
+    "DmaDescription": "TWIN FALLS"
+  }, {
+    "DmaCode": "762",
+    "DmaDescription": "MISSOULA"
+  }, {
+    "DmaCode": "764",
+    "DmaDescription": "RAPID CITY"
+  }, {
+    "DmaCode": "765",
+    "DmaDescription": "EL PASO"
+  }, {
+    "DmaCode": "766",
+    "DmaDescription": "HELENA"
+  }, {
+    "DmaCode": "767",
+    "DmaDescription": "CASPER-RIVERTON"
+  }, {
+    "DmaCode": "770",
+    "DmaDescription": "SALT LAKE CITY"
+  }, {
+    "DmaCode": "771",
+    "DmaDescription": "YUMA-EL CENTRO"
+  }, {
+    "DmaCode": "773",
+    "DmaDescription": "GRAND JUNCTION-MONTROSE"
+  }, {
+    "DmaCode": "789",
+    "DmaDescription": "TUCSON(NOGALES)"
+  }, {
+    "DmaCode": "790",
+    "DmaDescription": "ALBUQUERQUE-SANTA FE"
+  }, {
+    "DmaCode": "798",
+    "DmaDescription": "GLENDIVE"
+  }, {
+    "DmaCode": "800",
+    "DmaDescription": "BAKERSFIELD"
+  }, {
+    "DmaCode": "801",
+    "DmaDescription": "EUGENE"
+  }, {
+    "DmaCode": "802",
+    "DmaDescription": "EUREKA"
+  }, {
+    "DmaCode": "803",
+    "DmaDescription": "LOS ANGELES"
+  }, {
+    "DmaCode": "804",
+    "DmaDescription": "PALM SPRINGS"
+  }, {
+    "DmaCode": "807",
+    "DmaDescription": "SAN FRANCISCO-OAK-SAN JOSE"
+  }, {
+    "DmaCode": "810",
+    "DmaDescription": "YAKIMA-PASCO-RCHLND-KNNWCK"
+  }, {
+    "DmaCode": "811",
+    "DmaDescription": "RENO"
+  }, {
+    "DmaCode": "813",
+    "DmaDescription": "MEDFORD-KLAMATH FALLS"
+  }, {
+    "DmaCode": "819",
+    "DmaDescription": "SEATTLE-TACOMA"
+  }, {
+    "DmaCode": "820",
+    "DmaDescription": "PORTLAND OR"
+  }, {
+    "DmaCode": "825",
+    "DmaDescription": "SAN DIEGO"
+  }, {
+    "DmaCode": "828",
+    "DmaDescription": "MONTEREY-SALINAS"
+  }, {
+    "DmaCode": "839",
+    "DmaDescription": "LAS VEGAS"
+  }, {
+    "DmaCode": "855",
+    "DmaDescription": "SANTABARBRA-SANMAR-SANLUOB"
+  }, {
+    "DmaCode": "862",
+    "DmaDescription": "SACRAMNTO-STKTN-MODESTO"
+  }, {
+    "DmaCode": "866",
+    "DmaDescription": "FRESNO-VISALIA"
+  }, {
+    "DmaCode": "868",
+    "DmaDescription": "CHICO-REDDING"
+  }, {
+    "DmaCode": "881",
+    "DmaDescription": "SPOKANE"
+  }]
+}

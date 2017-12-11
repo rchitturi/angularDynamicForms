@@ -1,0 +1,33 @@
+{
+  "results": {
+    "code": 200,
+    "message": "success",
+    "messageType": {
+
+    }
+  },
+  "data": {
+    "username": "philip.choi@softrams.com",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNtcy5hZG1pbkBzb2Z0cmFtcy5jb20iLCJpYXQiOjE0OTk3OTIxOTF9.iA6uIX72ivUKIe8aNu3mVa_Irnht64FCpNbAzgTrhqk",
+    "status": "active",
+    "role": "ACOAdmin",
+    "userProfile": {
+      "firstName": "Philip",
+      "middleName": null,
+      "lastName": "Choi",
+      "email": "philip.choi@softrams.com",
+      "address": "123 Street Ave",
+      "address2": null,
+      "city": "Dallas",
+      "state": "TX",
+      "zipCode": "75252",
+      "phone": "2141231234"
+    },
+    "security": {
+      "mfa": {
+        "activated": false,
+        "mfaType": null
+      }
+    }
+  }
+}

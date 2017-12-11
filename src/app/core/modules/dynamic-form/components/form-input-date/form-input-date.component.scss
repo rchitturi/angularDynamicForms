@@ -1,0 +1,48 @@
+input {
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.7);
+  height: 38px;
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+}
+.datepickerDiv {
+  width: 100%;
+  .cal-icon {
+    font-size: 26px;
+    margin: 0 7px;
+    i {
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .clearDate {
+    position: relative;
+    font-size: 18px;
+    i {
+      position: absolute;
+      left: -22px;
+      top: 10px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .datepicker-ul {
+    position: relative;
+    z-index: 999999;
+    datepicker {
+      position: absolute;
+    }
+  }
+}

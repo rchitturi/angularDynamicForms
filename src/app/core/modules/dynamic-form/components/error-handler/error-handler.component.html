@@ -1,0 +1,25 @@
+<ng-container *ngIf="(config.validation && config.validation.length > 0) &&
+    (config.validationMsg && config.validationMsg.length > 0)">
+  <div class="form-error" role="alert"
+       *ngIf="!group.controls[config.name].valid&&group.controls[config.name].touched">
+    <ul>
+      <ng-container *ngIf="checkErrors(config.validationMsg)">
+        <li>{{errorMessage.label}}: {{errorMessage.msg}}</li>
+      </ng-container>
+      <ng-container *ngIf="!showed">
+        <li>This field is not valid</li>
+      </ng-container>
+    </ul>
+  </div>
+</ng-container>
+<ng-container *ngIf="(config.validation && config.validation.length > 0) &&
+    !(config.validationMsg)">
+  <div class="form-error" role="alert"
+       *ngIf="!group.controls[config.name].valid&&group.controls[config.name].touched">
+    <ul>
+      <ng-container>
+        <li>This field is not valid</li>
+      </ng-container>
+    </ul>
+  </div>
+</ng-container>

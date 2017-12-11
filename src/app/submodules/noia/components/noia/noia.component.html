@@ -1,0 +1,21 @@
+<div id="component-container" class="noia">
+  <sd-breadcrumb [breadcrumbs]="breadcrumb"></sd-breadcrumb>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Notice of Intent to Apply (NOIA): Initial Application</h1>
+      <p>The Initial Applicant Sample NOIA questions are applicable to ACOs that are not
+        currently participating in the Shared Savings Program. </p>
+
+      <p><span class="required"><em><strong>All fields are required unless field or section marked as</strong> (Optional)</em></span></p>
+
+      <dynamic-form
+        ngDefaultControl
+        [config]="config"
+        type="horizontal"
+        #form="dynamicForm"
+        (submit)="submit($event)">
+      </dynamic-form>
+    </div>
+  </div>
+</div>

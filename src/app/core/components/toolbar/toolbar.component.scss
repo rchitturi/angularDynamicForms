@@ -1,0 +1,52 @@
+﻿header {
+  position: relative;
+  padding: 20px 0;
+  background: #1f425e;
+  color: #fff;
+
+  .navbar {
+    background: transparent;
+    border-width: 0;
+    color: #fff;
+
+    &.navbar-default {
+      margin-bottom: 0;
+    }
+
+    .navbar-header {
+      a {
+        &.navbar-brand {
+          color: #fff;
+          font-family: Bitter,Times New Roman,Times,serif;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      ul {
+        li {
+          &>a {
+            color: #fff;
+            font-size: 15px;
+          }
+
+          ul {
+            &.dropdown-menu {
+              li {
+                a {
+                  color: #333;
+                }
+                &:hover {
+                  background: #f1f1f1;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
