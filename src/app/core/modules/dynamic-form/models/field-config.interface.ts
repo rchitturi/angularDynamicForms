@@ -22,4 +22,5 @@ export interface FieldConfig {
   btnConfig?: any;
   html?: string;
   inputConfig?: any;
+  businessLogic?: any;
 }

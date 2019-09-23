@@ -62,5 +62,54 @@ export class FormInputDateComponent implements Field, OnInit {
     this.Date = null;
     this.group.get(this.config.name).patchValue('');
   }
+  //  use regression for this 
+
+
+      public checkBusinessRules(businessLogic) {
+        let condition: boolean = false;
+        if (!businessLogic || (businessLogic && businessLogic.type !== 'if')) {
+          condition = true;
+        } else {
+          condition = this.creatingCondition(businessLogic.condition, this.group);
+        }
+        return condition;
+      }
+    
+      public creatingCondition(condition, form) {
+        let conditionKeys = Object.keys(condition);
+        let tempConditionValue: boolean = false;
+          if (typeof condition === 'object') {
+            if (conditionKeys[0] === 'and' && Array.isArray(condition['and'])) {
+              tempConditionValue = true;
+              condition['and'].forEach(element => {
+                tempConditionValue = tempConditionValue && this.creatingCondition(element, form)
+              });
+            } else if (conditionKeys[0] === 'or' && Array.isArray(condition['or'])) {
+              tempConditionValue = false;
+              condition['or'].forEach(element => {
+                tempConditionValue = tempConditionValue || this.creatingCondition(element, form)
+              });
+            } else {
+              tempConditionValue = false;
+              if (condition.type === 'equalTo') {
+                tempConditionValue = form.get(condition.name) === condition.value;
+              } else if (condition.type === 'lessThan') {
+                tempConditionValue = form.get(condition.name) < condition.value;
+              } else if (condition.type === 'lessThanOrEqualTo') {
+                tempConditionValue = form.get(condition.name) <= condition.value;
+              } else if (condition.type === 'greaterThan') {
+                tempConditionValue = form.get(condition.name) > condition.value;
+              } else if (condition.type === 'greaterThanOrEqualTo') {
+                tempConditionValue = form.get(condition.name) >= condition.value;
+              } else if (condition.type === 'notEqualTo') {
+                tempConditionValue = form.get(condition.name) !== condition.value;
+              }
+            }
+            return tempConditionValue;
+          } else {
+            console.warn('wrong JSON data');
+          }
+      }
+  
 
 }

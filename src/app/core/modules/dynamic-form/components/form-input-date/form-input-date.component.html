@@ -1,4 +1,4 @@
-<div class="dynamic-field form-input form-group" [ngClass]="config.class ? config.class.join(' ').trim() : ''"
+<div class="dynamic-field form-input form-group" [ngClass]="config.class ? config.class.join(' ').trim() : ''" *ngIf="checkBusinessRules(config.businessLogic)"
 fxLayout="{{config.inputConfig && config.inputConfig.alignment ? config.inputConfig.alignment : 'row'}}"
 fxLayout.lt-md="column" [formGroup]="group">
 <label class="control-label" [ngClass]="config.class ? config.class.join(' ').trim() : ''" for="{{config.name}}"
